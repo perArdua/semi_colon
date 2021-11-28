@@ -1,0 +1,54 @@
+.all{
+    width: 1200px;
+    height: 1000px;
+
+    margin : auto;
+}
+
+.logo{
+    height: 150px;
+    background-color: blue;
+}
+
+.out{
+    height: 800px;
+    background-color: lightgray;
+}
+
+.question{
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+}
+.questiontitle{
+    font-size:15px;
+    font-weight: bold;
+}
+.questionsub{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.answer{
+    width: 1000px;
+    height: 400px;
+    background-color:lightgreen;
+    margin: auto;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.button{
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+}
+
+footer{
+    height: 50px;
+    background-color: hotpink;
+}
+
+.borderline{
+    border:1px solid gray;
+}
