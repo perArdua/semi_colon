@@ -1,0 +1,69 @@
+<script>
+function press(f){
+    if(f.keyCode == 13){
+        formname.submit();
+    }
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="EUC-KR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
+    <title>Google</title>
+    
+</head>
+<body>
+    <header class="top-header">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">무슨</a></li>
+                <li><a href="#">내용을</a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+            <div class="profile_img_wrap">
+                <img src="logo_1.png">
+            </div>
+        </nav>
+        <hr width="100%" color="black" size="1">
+    </header>
+    <section class="main-section">
+        <div class="logo-wrap">
+            <a href="main.html"><img src="logo_letter.jpg" height="125" width="550"></a>
+        </div>
+        <form action="main.html" method="post" name="search-area" id="action-area">
+            <div class="searchbar-wrap">
+                <i class="fas fa-search"></i>
+                <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)"/>
+                <button style="border: 0; background-color: white" type="button" title="submit"><a id="submit-form" href="main.html"><i class="far fa-paper-plane"></i></a></button>
+            </div> 
+        </form>
+        <div class="buttons">
+            <button>로그인 버튼..?</button>
+            <button>질문 답변페이지 이동??</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="country">
+            <span>현재 접속 국가 : 대한민국</span>
+        </div>
+        <div class="foot-links-wrap">
+            <div class="foot-links-wrap-right">
+
+            </div>
+            <div class="foot-links-wrap-left">
+                <ul>
+                    <li><a href="main.html">Well-Known 정보</a></li>
+                    <li><a href="main.html">이용 약관</a></li>
+                    <li><a href="main.html">개인정보처리방침</a></li>
+                    <li><a href="main.html">게시중단요청서비스</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
