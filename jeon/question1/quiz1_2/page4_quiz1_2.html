@@ -5,7 +5,7 @@
         <meta charset="EUC-KR">
         <link rel = "stylesheet" href = "style.css" type="text/css">
 
-        <!--ë¶€íŠ¸ìŠ¤íŠ¸ëž©-->
+        <!--ºÎÆ®½ºÆ®·¦-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -21,25 +21,25 @@
                 <section class="question d-flex pt-5">
                     <img src="q.png" width="150px" height="150px">
                     <div class="text-center">
-                        10ë‹¨ìœ¼ë¡œ ì´ë£¨ì–´ì§„ ê³„ë‹¨ì´ ìžˆë‹¤. AëŠ” í•œ ë²ˆì— 1ë‹¨ ë˜ëŠ” 2ë‹¨ìœ¼ë¡œë§Œ ì˜¬ë¼ê°ˆ ìˆ˜ ìžˆë‹¤ê³  í•  ë•Œ,<br><br>
-                        Aê°€ 10ë‹¨ì˜ ê³„ë‹¨ì„ ì˜¬ë¼ê°€ëŠ” ê²½ìš°ì˜ ìˆ˜ë¥¼ êµ¬í•˜ì—¬ë¼.
+                        0´ÜÀ¸·Î ÀÌ·ç¾îÁø °è´ÜÀÌ ÀÖ´Ù. A´Â ÇÑ ¹ø¿¡ 1´Ü ¶Ç´Â 2´ÜÀ¸·Î¸¸ ¿Ã¶ó°¥ ¼ö ÀÖ´Ù°í ÇÒ ¶§,<br><br>
+                        A°¡ 10´ÜÀÇ °è´ÜÀ» ¿Ã¶ó°¡´Â °æ¿ìÀÇ ¼ö¸¦ ±¸ÇÏ¿©¶ó.
                     </div>
                    
                 </section>
                 <section class="answer ">
                     <div class="ml-4">
-                        ì •ë‹µ :<input type="text" id="answer" class="ml-2 mt-2">
-                        <button type="button" class="btn ml-3" id="check">í™•ì¸</button><br>
+                        Á¤´ä :<input type="text" id="answer" class="ml-2 mt-2">
+                        <button type="button" class="btn ml-3" id="check">È®ÀÎ</button><br>
                     </div>
-                    <button type="button" class="btn float-right mr-3" id="open">ì •ë‹µ í™•ì¸</button>
+                    <button type="button" class="btn float-right mr-3" id="open">Á¤´ä È®ÀÎ</button>
                 </section>
                 <section class="answer_check borderline">
-                    ë‹µ : 89ê°€ì§€<br>
-                    í’€ì´ê³¼ì • :<br>
-                    a<sub>n</sub> = në²ˆì§¸ ê³„ë‹¨ì— ê°€ëŠ” ê²½ìš°ì˜ ìˆ˜<br>
+                    ´ä : 89°¡Áö<br>
+                    Ç®ÀÌ°úÁ¤ :<br>
+                    a<sub>n</sub> = n¹øÂ° °è´Ü¿¡ °¡´Â °æ¿ìÀÇ ¼ö<br>
                     a<sub>1</sub> = 1, a<sub>2</sub> = 2<br>
                     a<sub>4</sub> = 3, a<sub>3</sub> = 5<br>
-                    a<sub>n+2</sub> = a<sub>n</sub> + a<sub>n+1</sub>  -->í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ìž„ì´ í™•ì¸ëœë‹¤.<br><br>
+                    a<sub>n+2</sub> = a<sub>n</sub> + a<sub>n+1</sub>  -->ÇÇº¸³ªÄ¡ ¼ö¿­ÀÓÀÌ È®ÀÎµÈ´Ù.<br><br>
                     <table  border="1" class="table">
                         <tr>
                             <td>a<sub>1</sub></td>
@@ -67,7 +67,7 @@
                         </tr>
                     </table>
                     a<sub>10</sub> = 89
-                    <button type="button" class="btn float-right mr-3" onclick="location.href='https://www.naver.com/'">ë‹¤ìŒ</button>
+                    <button type="button" class="btn float-right mr-3" onclick="location.href='https://www.naver.com/'">´ÙÀ½</button>
                 </section>
             </div>
             <footer>
@@ -75,16 +75,16 @@
             </footer>
         </div>
             
-            
+                
             <script>
                 $(document).ready(function(){
                     $('.answer_check').hide();
                     $('#check').on('click',function(){
                         if($('#answer').val()=="89"){
-                            alert("ì •ë‹µìž…ë‹ˆë‹¤.");
+                            alert("Á¤´äÀÔ´Ï´Ù.");
                         }
                         else{
-                            alert("ì˜¤ë‹µìž…ë‹ˆë‹¤.");
+                            alert("¿À´äÀÔ´Ï´Ù.");
                         }
                     });
                     $('#open').on('click',function(){
