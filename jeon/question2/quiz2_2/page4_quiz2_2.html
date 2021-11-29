@@ -3,9 +3,10 @@
     <head>
         <title></title>
         <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "style.css" type="text/css">
 
-        <!--ë¶€íŠ¸ìŠ¤íŠ¸ëž©-->
+        <!--ºÎÆ®½ºÆ®·¦-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -15,40 +16,40 @@
     <body>
         <div class="all">
             <header class="logo">
-                ë¡œê³ 
+                ·Î°í
             </header>
             <div class="out">            
                 <section class="question  pt-5 d-flex">
                     <img src="q.png" width="150px" height="150px">
                     <div class="text-center">
-                        í•œ ê°œì˜ ì£¼ì‚¬ìœ„ë¥¼ ì„¸ ë²ˆ ë˜ì ¸ 4ì˜ ëˆˆì´ í•œ ë²ˆ ì´ìƒ ë‚˜ì™”ì„ ë•Œ, <br><br>
-                        ë‚˜ì˜¨ ì„¸ ëˆˆì˜ ìˆ˜ì˜ í•©ì´ 6ì˜ ë°°ìˆ˜ì¼ í™•ë¥  ì€ q/pì´ë‹¤. p+qì˜ ê°’ì„ êµ¬í•˜ì‹œì˜¤.
+                        ÇÑ °³ÀÇ ÁÖ»çÀ§¸¦ ¼¼ ¹ø ´øÁ® 4ÀÇ ´«ÀÌ ÇÑ ¹ø ÀÌ»ó ³ª¿ÔÀ» ¶§, <br><br>
+                        ³ª¿Â ¼¼ ´«ÀÇ ¼öÀÇ ÇÕÀÌ 6ÀÇ ¹è¼öÀÏ È®·ü Àº q/pÀÌ´Ù. p+qÀÇ °ªÀ» ±¸ÇÏ½Ã¿À.
                     </div>
                    
                 </section>
                 <section class="answer ">
                     <div class="ml-4">
-                        ì •ë‹µ :<input type="text" id="answer" class="ml-2 mt-2">
-                        <button type="button" class="btn ml-3" id="check">í™•ì¸</button><br>
+                        Á¤´ä :<input type="text" id="answer" class="ml-2 mt-2">
+                        <button type="button" class="btn ml-3" id="check">È®ÀÎ</button><br>
                     </div>
-                    <button type="button" class="btn float-right mr-3" id="open">ì •ë‹µ í™•ì¸</button>
+                    <button type="button" class="btn float-right mr-3" id="open">Á¤´ä È®ÀÎ</button>
                 </section>
                 <section class="answer_check borderline">
-                    ë‹µ : 107<br>
-                    í’€ì´ê³¼ì • : <br>
-                    ëª¨ë“  ê²½ìš°ì˜ ìˆ˜ëŠ” 216ê°€ì§€ìž…ë‹ˆë‹¤.
-                    í•œ ê°œì˜ ì£¼ì‚¬ìœ„ë¥¼ ì„¸ë²ˆ ë˜ì§ˆ ë•Œ, 4ì˜ ëˆˆì´ í•œ ë²ˆ ì´ìƒ ë‚˜ì˜¤ëŠ” ì‚¬ê±´ì„ A, <br>
-                    ì„¸ ëˆˆì˜ ìˆ˜ì˜ í•©ì´ 6ì˜ ë°°ìˆ˜ì¸ ì‚¬ê±´ì„ Bë¼ í•˜ë©´ êµ¬í•˜ëŠ” í™•ë¥ ì€ P(B|A)ìž…ë‹ˆë‹¤.<br>
-                    4ì˜ ëˆˆì´ 1ë²ˆ ë‚˜ì˜¤ëŠ” ê²½ìš°ì˜ ìˆ˜ëŠ” 75, 2ë²ˆ ë‚˜ì˜¤ëŠ” ê²½ìš°ì˜ ìˆ˜ëŠ” 15, 3ë²ˆ ë‚˜ì˜¤ëŠ” ê²½ìš°ì‹€ ìˆ˜ëŠ” 1ì´ë¯€ë¡œ<br><br>
-                    P(A) = 91/216ìž…ë‹ˆë‹¤.<br><br>
-                    ì„¸ ëˆˆì˜ ìˆ˜ë¥¼ 4,a,bë¼ê³  ê°€ì •í•˜ê³  ê²½ìš°ì˜ ìˆ˜ë¥¼ ë‚˜ëˆ„ë©´<br>
-                    4+a+b=6ì¸ ê²½ìš° -> 3ê°€ì§€
-                    4+a+b=12ì¸ ê²½ìš° -> 13ê°€ì§€
-                    4+a+b=18ì¸ ê²½ìš° -> 0ê°€ì§€<br><br>
-                    ì´ë¯€ë¡œ P(Aâˆ©B) = 16/216 =2/27ìž…ë‹ˆë‹¤.<br><br>
-                    ë”°ë¼ì„œ êµ¬í•˜ëŠ” í™•ë¥ ì¸ P(B|A) = 16/91 ì´ë¯€ë¡œ<br><br>
-                    p = 91, q =16ì´ë©° ë‹µì€ 91+16=107ìž…ë‹ˆë‹¤.
-                    <button type="button" class="btn float-right mr-3" onclick="location.href='https://www.naver.com/'">ë‹¤ìŒ</button>
+                    ´ä : 107<br>
+                    Ç®ÀÌ°úÁ¤ : <br>
+                    ¸ðµç °æ¿ìÀÇ ¼ö´Â 216°¡ÁöÀÔ´Ï´Ù.
+                    ÇÑ °³ÀÇ ÁÖ»çÀ§¸¦ ¼¼¹ø ´øÁú ¶§, 4ÀÇ ´«ÀÌ ÇÑ ¹ø ÀÌ»ó ³ª¿À´Â »ç°ÇÀ» A, <br>
+                    ¼¼ ´«ÀÇ ¼öÀÇ ÇÕÀÌ 6ÀÇ ¹è¼öÀÎ »ç°ÇÀ» B¶ó ÇÏ¸é ±¸ÇÏ´Â È®·üÀº P(B|A)ÀÔ´Ï´Ù.<br>
+                    4ÀÇ ´«ÀÌ 1¹ø ³ª¿À´Â °æ¿ìÀÇ ¼ö´Â 75, 2¹ø ³ª¿À´Â °æ¿ìÀÇ ¼ö´Â 15, 3¹ø ³ª¿À´Â °æ¿ìšÃ ¼ö´Â 1ÀÌ¹Ç·Î<br><br>
+                    P(A) = 91/216ÀÔ´Ï´Ù.<br><br>
+                    ¼¼ ´«ÀÇ ¼ö¸¦ 4,a,b¶ó°í °¡Á¤ÇÏ°í °æ¿ìÀÇ ¼ö¸¦ ³ª´©¸é<br>
+                    4+a+b=6ÀÎ °æ¿ì -> 3°¡Áö
+                    4+a+b=12ÀÎ °æ¿ì -> 13°¡Áö
+                    4+a+b=18ÀÎ °æ¿ì -> 0°¡Áö<br><br>
+                    ÀÌ¹Ç·Î P(A¡ûB) = 16/216 =2/27ÀÔ´Ï´Ù.<br><br>
+                    µû¶ó¼­ ±¸ÇÏ´Â È®·üÀÎ P(B|A) = 16/91 ÀÌ¹Ç·Î<br><br>
+                    p = 91, q =16ÀÌ¸ç ´äÀº 91+16=107ÀÔ´Ï´Ù.
+                    <button type="button" class="btn float-right mr-3" onclick="location.href='https://www.naver.com/'">´ÙÀ½</button>
                 </section>
             </div>
             <footer>
@@ -62,10 +63,10 @@
                     $('.answer_check').hide();
                     $('#check').on('click',function(){
                         if($('#answer').val()=="107"){
-                            alert("ì •ë‹µìž…ë‹ˆë‹¤.");
+                            alert("Á¤´äÀÔ´Ï´Ù.");
                         }
                         else{
-                            alert("ì˜¤ë‹µìž…ë‹ˆë‹¤.");
+                            alert("¿À´äÀÔ´Ï´Ù.");
                         }
                     });
                     $('#open').on('click',function(){
@@ -78,4 +79,6 @@
 
     </body>
 </html>
+
+
 

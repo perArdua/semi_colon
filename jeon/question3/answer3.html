@@ -3,9 +3,10 @@
     <head>
         <title></title>
         <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "style.css" type="text/css">
 
-        <!--ë¶€íŠ¸ìŠ¤íŠ¸ëž©-->
+        <!--ºÎÆ®½ºÆ®·¦-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -15,32 +16,32 @@
     <body>
         <div class = "all">
             <header class = "logo">
-                ë¡œê³ 
+                ·Î°í
             </header>
             <div class="out"> 
                 <section class = "question">
                     <div class="text-center pt-5 questiontitle">
                         <img src="question.png" width="100px">
-                        ìˆ«ìž 1,1,1,2,2,3ì´ í•˜ë‚˜ì”© ì í˜€ ìžˆëŠ” 6ìž¥ì˜ ì¹´ë“œê°€ ìžˆë‹¤.í•™ìƒ Aê°€ ì´ 6ìž¥ì˜
-                        ì¹´ë“œ ì¤‘ì—ì„œ ìž„ì˜ë¡œ í•œ ìž¥ì˜ ì¹´ë“œë¥¼ ì„ íƒí•œ í›„ í•™ìƒ Bê°€ ë‚¨ì€ 5ìž¥ì˜ ì¹´ë“œ ì¤‘ì—ì„œ ìž„ì˜ë¡œ í•œ ìž¥ì˜
-                        ì¹´ë“œë¥¼ ì„ íƒí•œë‹¤.  í•™ìƒ Aê°€ 1ì´ ì í˜€ ìžˆëŠ” ì¹´ë“œë¥¼ ì„ íƒí•˜ê³ , í•™ìƒ Bë„ 1ì´ ì í˜€ ìžˆëŠ” ì¹´ë“œë¥¼ ì„ íƒí•  í™•ë¥ ì€?<br><br><br>
+                        ¼ýÀÚ 1,1,1,2,2,3ÀÌ ÇÏ³ª¾¿ ÀûÇô ÀÖ´Â 6ÀåÀÇ Ä«µå°¡ ÀÖ´Ù.ÇÐ»ý A°¡ ÀÌ 6ÀåÀÇ
+                        Ä«µå Áß¿¡¼­ ÀÓÀÇ·Î ÇÑ ÀåÀÇ Ä«µå¸¦ ¼±ÅÃÇÑ ÈÄ ÇÐ»ý B°¡ ³²Àº 5ÀåÀÇ Ä«µå Áß¿¡¼­ ÀÓÀÇ·Î ÇÑ ÀåÀÇ
+                        Ä«µå¸¦ ¼±ÅÃÇÑ´Ù.  ÇÐ»ý A°¡ 1ÀÌ ÀûÇô ÀÖ´Â Ä«µå¸¦ ¼±ÅÃÇÏ°í, ÇÐ»ý Bµµ 1ÀÌ ÀûÇô ÀÖ´Â Ä«µå¸¦ ¼±ÅÃÇÒ È®·üÀº?<br><br><br>
 
-                        <span style="font-size: 20px;">ì´ ë¬¸ì œ ì¢€ í’€ì–´ì£¼ì„¸ìš” ã… </span>
+                        <span style="font-size: 20px;">ÀÌ ¹®Á¦ Á» Ç®¾îÁÖ¼¼¿ä ¤Ð</span>
                     </div>
                     <div class="pt-4 questionsub"> 
-                        #í™•ë¥ , #ì¡°ê±´ë¶€í™•ë¥ , #ê³ ë“±ìˆ˜í•™
+                        #È®·ü, #Á¶°ÇºÎÈ®·ü, #°íµî¼öÇÐ
                     </div>
                 </section>
                 <section class = "answer borderline">
-                    í•™ìƒ Aê°€ 1ì´ ì í˜€ ìžˆëŠ” ì¹´ë“œë¥¼ ì„ íƒí•˜ëŠ” ì‚¬ê±´ì„ A,<br><br>
-                    í•™ìƒ Bê°€ 1ì´ ì í˜€ ìžˆëŠ” ì¹´ë“œë¥¼ ì„ íƒí•˜ëŠ” ì‚¬ê±´ì„ Bë¼ í•˜ë©´<br><br>
-                    P(A) = 3/6 = 1/2, P(B|A) = 2/5ê°€ ë©ë‹ˆë‹¤.<br><br>
-                    ë”°ë¼ì„œ êµ¬í•˜ëŠ” í™•ë¥ ì€ <br><br>
-                    P(Aâˆ©B) = P(A)P(B|A) = 1/2 * 2/5 = 1/5 ì´ë¯€ë¡œ<br><br>
-                    1/5 í™•ë¥ ì´ ë©ë‹ˆë‹¤.
+                    ÇÐ»ý A°¡ 1ÀÌ ÀûÇô ÀÖ´Â Ä«µå¸¦ ¼±ÅÃÇÏ´Â »ç°ÇÀ» A,<br><br>
+                    ÇÐ»ý B°¡ 1ÀÌ ÀûÇô ÀÖ´Â Ä«µå¸¦ ¼±ÅÃÇÏ´Â »ç°ÇÀ» B¶ó ÇÏ¸é<br><br>
+                    P(A) = 3/6 = 1/2, P(B|A) = 2/5°¡ µË´Ï´Ù.<br><br>
+                    µû¶ó¼­ ±¸ÇÏ´Â È®·üÀº <br><br>
+                    P(A¡ûB) = P(A)P(B|A) = 1/2 * 2/5 = 1/5 ÀÌ¹Ç·Î<br><br>
+                    1/5 È®·üÀÌ µË´Ï´Ù.
                 </section>
                 <div class="button col-10 pt-3">
-                    <button type="button" class="btn float-right" onclick="location.href='../question2/quiz2_1/page4_quiz2_1.html'">ë‹¤ìŒ</button>
+                    <button type="button" class="btn float-right" onclick="location.href='../question2/quiz2_1/quiz2_1.html'">´ÙÀ½</button>
                 </div>
             </div>
             

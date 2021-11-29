@@ -3,9 +3,10 @@
     <head>
         <title></title>
         <meta charset="EUC-KR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "style.css" type="text/css">
 
-        <!--ë¶€íŠ¸ìŠ¤íŠ¸ëž©-->
+        <!--ºÎÆ®½ºÆ®·¦-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -15,39 +16,39 @@
     <body>
         <div class="all">
             <header class="logo">
-                ë¡œê³ 
+                ·Î°í
             </header>
             <div class="out">            
                 <section class="question pt-5 d-flex">
                     <img src="q.png" width="150px" height="150px">
                     <div class="text-center">
-                        ì§‘í•© X = {1,2,3,4,5,6,7}ì˜ ëª¨ë“  ë¶€ë¶„ì§‘í•© ì¤‘ì—ì„œ ìž„ì˜ë¡œ í•œ ì§‘í•©ì„ ì„ íƒí•œë‹¤.<br><br>
-                        ì„ íƒí•œ ì§‘í•©ì˜ ì›ì†Œì˜ ê°œìˆ˜ê°€ 4ì´ìƒì¼ ë•Œ, ì´ ì§‘í•©ì˜ ì›ì†Œì˜ ìµœì†Ÿê°’ì´ 3ì¼ í™•ë¥ ì€?
+                        ÁýÇÕ X = {1,2,3,4,5,6,7}ÀÇ ¸ðµç ºÎºÐÁýÇÕ Áß¿¡¼­ ÀÓÀÇ·Î ÇÑ ÁýÇÕÀ» ¼±ÅÃÇÑ´Ù.<br><br>
+                        ¼±ÅÃÇÑ ÁýÇÕÀÇ ¿ø¼ÒÀÇ °³¼ö°¡ 4ÀÌ»óÀÏ ¶§, ÀÌ ÁýÇÕÀÇ ¿ø¼ÒÀÇ ÃÖ¼Ú°ªÀÌ 3ÀÏ È®·üÀº?
                     </div>
                   
                 </section>
                 <section class="answer ">
                     <div class="ml-4">
-                        ì •ë‹µ :<input type="text" id="answer" class="ml-2 mt-2">
-                        <button type="button" class="btn ml-3" id="check">í™•ì¸</button><br>
+                        Á¤´ä :<input type="text" id="answer" class="ml-2 mt-2">
+                        <button type="button" class="btn ml-3" id="check">È®ÀÎ</button><br>
                     </div>
-                    <button type="button" class="btn float-right mr-3" id="open">ì •ë‹µ í™•ì¸</button>
+                    <button type="button" class="btn float-right mr-3" id="open">Á¤´ä È®ÀÎ</button>
                 </section>
                 <section class="answer_check borderline">
-                    ë‹µ : 5/64<br>
-                    í’€ì´ê³¼ì • : <br>
-                    ì§‘í•© Xì˜ ëª¨ë“  ë¶€ë¶„ì§‘í•© ì¤‘ì—ì„œ í•œ ì§‘í•©ì„ ì„ íƒí•˜ëŠ” ê²½ìš°ì˜ ìˆ˜ëŠ” 2<sup>7</sup>=128ìž…ë‹ˆë‹¤.<br>
-                    ì„ íƒí•œ ì§‘í•©ì˜ ì›ì†Œì˜ ê°œìˆ˜ê°€ 4 ì´ìƒì¸ ì‚¬ê±´ì„ A, ì›ì†Œì˜ ìµœì†Ÿê°’ì´ 3ì¸ ì‚¬ê±´ì„ Bë¼ í•˜ë©´ êµ¬í•˜ëŠ”<br><br> 
-                    í™•ë¥ ì€ P(B|A)ìž…ë‹ˆë‹¤.<br><br>
-                    ì§‘í•¨ Xì˜ ë¶€ë¶„ì§‘í•© ì¤‘ ì›ì†Œì˜ ê°œìˆ˜ê°€ 4ì´ìƒì¸ ì§‘í•©, ì¦‰ ì›ì†Œê°€ 4ê°œ ë˜ëŠ” 5ê°œ ë˜ëŠ” 6ê°œ ë˜ëŠ”
-                    7ê°œì¸ ì§‘í•©ì„ ì„ íƒí•˜ëŠ” ê²½ìš°ì˜ ìˆ˜ëŠ” 64ì´ë¯€ë¡œ<br><br>
-                    P(A)=64/128=1/2 ìž…ë‹ˆë‹¤.<br><br>
-                    ì›ì†Œì˜ ê°œìˆ˜ê°€ 4 ì´ìƒì¸ ì§‘í•©ì˜ ì›ì†Œì˜ ìµœì†Ÿê°’ì´ 3ì´ë ¤ë©´ 3ì„ ë°˜ë“œì‹œ ì›ì†Œë¡œ ì„ íƒí•˜ê³  4,5,6,7<br>
-                    ì¤‘ì—ì„œ 3ê°œ ë˜ëŠ” 4ê°œë¥¼ ì„ íƒí•˜ë©´ ë˜ê¸° ë•Œë¬¸ì— ì´ ê²½ìš°ì˜ ìˆ˜ëŠ” 5ì´ë¯€ë¡œ<br><br>
-                    P(Aâˆ©B)=5/128 ìž…ë‹ˆë‹¤.<br>
-                    ë”°ë¼ì„œ êµ¬í•˜ëŠ” í™•ë¥ ì¸ p(B|A)ëŠ” 5/64ìž…ë‹ˆë‹¤.
+                    ´ä : 5/64<br>
+                    Ç®ÀÌ°úÁ¤ : <br>
+                    ÁýÇÕ XÀÇ ¸ðµç ºÎºÐÁýÇÕ Áß¿¡¼­ ÇÑ ÁýÇÕÀ» ¼±ÅÃÇÏ´Â °æ¿ìÀÇ ¼ö´Â 2<sup>7</sup>=128ÀÔ´Ï´Ù.<br>
+                    ¼±ÅÃÇÑ ÁýÇÕÀÇ ¿ø¼ÒÀÇ °³¼ö°¡ 4 ÀÌ»óÀÎ »ç°ÇÀ» A, ¿ø¼ÒÀÇ ÃÖ¼Ú°ªÀÌ 3ÀÎ »ç°ÇÀ» B¶ó ÇÏ¸é ±¸ÇÏ´Â<br><br> 
+                    È®·üÀº P(B|A)ÀÔ´Ï´Ù.<br><br>
+                    ÁýÇÔ XÀÇ ºÎºÐÁýÇÕ Áß ¿ø¼ÒÀÇ °³¼ö°¡ 4ÀÌ»óÀÎ ÁýÇÕ, Áï ¿ø¼Ò°¡ 4°³ ¶Ç´Â 5°³ ¶Ç´Â 6°³ ¶Ç´Â
+                    7°³ÀÎ ÁýÇÕÀ» ¼±ÅÃÇÏ´Â °æ¿ìÀÇ ¼ö´Â 64ÀÌ¹Ç·Î<br><br>
+                    P(A)=64/128=1/2 ÀÔ´Ï´Ù.<br><br>
+                    ¿ø¼ÒÀÇ °³¼ö°¡ 4 ÀÌ»óÀÎ ÁýÇÕÀÇ ¿ø¼ÒÀÇ ÃÖ¼Ú°ªÀÌ 3ÀÌ·Á¸é 3À» ¹Ýµå½Ã ¿ø¼Ò·Î ¼±ÅÃÇÏ°í 4,5,6,7<br>
+                    Áß¿¡¼­ 3°³ ¶Ç´Â 4°³¸¦ ¼±ÅÃÇÏ¸é µÇ±â ¶§¹®¿¡ ÀÌ °æ¿ìÀÇ ¼ö´Â 5ÀÌ¹Ç·Î<br><br>
+                    P(A¡ûB)=5/128 ÀÔ´Ï´Ù.<br>
+                    µû¶ó¼­ ±¸ÇÏ´Â È®·üÀÎ p(B|A)´Â 5/64ÀÔ´Ï´Ù.
                     
-                    <button type="button" class="btn float-right mr-3" onclick="location.href='../quiz2_2/page4_quiz2_2.html'">ë‹¤ìŒ</button>
+                    <button type="button" class="btn float-right mr-3" onclick="location.href='../quiz2_2/quiz2_2.html'">´ÙÀ½</button>
                 </section>
             </div>
             <footer>
@@ -61,10 +62,10 @@
                     $('.answer_check').hide();
                     $('#check').on('click',function(){
                         if($('#answer').val()=="5/64"){
-                            alert("ì •ë‹µìž…ë‹ˆë‹¤.");
+                            alert("Á¤´äÀÔ´Ï´Ù.");
                         }
                         else{
-                            alert("ì˜¤ë‹µìž…ë‹ˆë‹¤.");
+                            alert("¿À´äÀÔ´Ï´Ù.");
                         }
                     });
                     $('#open').on('click',function(){
