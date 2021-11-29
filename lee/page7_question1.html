@@ -4,28 +4,51 @@
     <TITLE>Answer</TITLE>
     <meta charset="EUC-KR">
 </HEAD>
-    <a href="main.html"><img src="logo_letter.jpg" width:"30 px" height="30 px" /></a>
     <BODY>
-        <header>
-            <div class="title" style="border: none;" width="50%" align="center">
-                <img src="Q.png" width="60" height="30" align="bottom">
-                <font size="40">HTML 너무 어려워요</font>
-            </div>
+        <header class="top-header">
+            <nav class="top-nav">
+                <div class="upper_left_img_wrap">
+                    <a href="../kim/main.html">
+                        <img src="../kim/very_small_letter_50h.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <form action="../cho/page2.html" method="post" name="search-area" id="action-area">
+                    <div class="small_searchbar_wrap">
+                        <i class="fas fa-search"></i>
+                        <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28" />
+                        <button id="go_next_page" style="border: 0; background-color: white" type="button" title="submit" onclick="location.href='../cho/page2.html'"><a id="submit-form"><i class="far fa-paper-plane"></i></a></button>
+                    </div>
+                </form>
+                <div class="profile_img_wrap">
+                    <img src="../kim/deer.jpg">
+                </div>
+                <ul>
+                    <li>수뭉이 <strong>전문가</strong>님환영합니다</li>
+                </ul>
+            </nav>
+
+            <hr width="100%" color="black" size="1">
         </header>
+
+        <div class="title" style="border: none;" width="50%" align="center">
+            <img src="Q.png" width="60" height="30" align="bottom">
+            <font size="40">HTML 너무 어려워요</font>
+        </div>
 
         <div class="container" style="none; min-width: 1000px;">
             1. HTML에서 텍스트 입력은 어떻게 받나요?
             <br />2. C++ 잘하고 싶어요
             <br />3. A+ 받고 싶어요
             <br />4. 서울캠퍼스 : 02-2287-5114 (우 03016) 서울시 종로구 홍지문 2길 20 상명대학교
-            <br />5. 질문 넣을게 생각이 안나
+            <br />5. 자퇴마렵다
+            <br />6. 질문 넣을게 생각이 안나
         </div>
         <div class="ans">
             <p>
                 <div>
-                    <textarea cols="120" rows="60" placeholder="답변을 입력하세요"></textarea>
+                    <textarea cols="120" rows="50" placeholder="답변을 입력하세요"></textarea>
                 </div>
-           
+
                 <div class="button">
                     <input type="button" value="질문등록" />
                 </div>
@@ -66,7 +89,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 1100px;
+        height: 990px;
         width: 1200px;
         background-color: lightgray;
         justify-content: center;
@@ -86,7 +109,7 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
-        margin: auto;
+       
     }
     header {
         width: 100%;
@@ -105,6 +128,73 @@
         --button-text-gray-color: #5F6368;
         --font-family: 'Apple SD Gothic Neo',arial,sans-serif;
     }
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: var(--font-family);
+    }
+
+    .top-header {
+        width: 100%;
+        height: 50px;
+    }
+
+        .top-header .top-nav {
+            display: flex;
+            height: 36px;
+            padding-top: 18px;
+            padding-left: 30px;
+            padding-right: 30px;
+            align-content: center;
+        }
+
+            .top-header .top-nav ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                align-content: center;
+            }
+
+                .top-header .top-nav ul li {
+                    margin-right: 18px;
+                    height: 36px;
+                }
+
+                    .top-header .top-nav ul li a {
+                        text-decoration: none;
+                        font-size: 13px;
+                        display: block;
+                        line-height: 36px;
+                        width: 36;
+                        color: var( --gray-color )
+                    }
+
+                        .top-header .top-nav ul li a:hover {
+                            text-decoration: underline
+                        }
+
+            .top-header .top-nav .profile_img_wrap img {
+                width: 36px;
+                height: 36px;
+                border-radius: 18px;
+                justify-content: flex-end;
+                margin-left: auto;
+            }
+
+            .top-header .top-nav .upper_left_img_wrap {
+                justify-content: flex-start;
+            }
+
+            .top-header .top-nav #action-area {
+                justify-content: flex-start;
+                margin-right: auto;
+            }
+
+                .top-header .top-nav #action-area .small_searchbar_wrap {
+                    padding-left: -25%;
+                    padding-top: 5%;
+                }
 
     footer {
         position: fixed;
