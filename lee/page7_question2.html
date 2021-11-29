@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE>Q&A</TITLE>
+    <meta charset="EUC-KR">
+</HEAD>
+
+<BODY>
+    <header>
+        <a href="main.html"><img src="logo_letter.jpg" width:"150 px" height="100px" /></a>
+    </header>
+    <div class="container">
+        <div>
+            <textarea cols="100" placeholder="제목을 입력하세요"></textarea>
+        </div>
+        <br />
+        <form>
+            <p>
+                <div>
+                    <textarea cols="100" rows="50" placeholder="질문을 입력하세요" ></textarea>
+                </div>
+            </p>
+        </form>
+        <div>
+         
+            <textarea cols="100" rows="2" placeholder="#원하는 #태그를 #입력하세요"></textarea>
+
+        </div>
+        <div>
+            <input type="button" value="질문등록" />
+        </div>
+    </div>
+    <footer>
+        <div class="country">
+            <span>현재 접속 국가 : 대한민국</span>
+        </div>
+        <div class="foot-links-wrap">
+            <div class="foot-links-wrap-right">
+
+            </div>
+            <div class="foot-links-wrap-left">
+                <ul>
+                    <li><a href="main.html">Well-Known 정보</a></li>
+                    <li><a href="main.html">이용 약관</a></li>
+                    <li><a href="main.html">개인정보처리방침</a></li>
+                    <li><a href="main.html">게시중단요청서비스</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</BODY>
+
+<style>
+    div.container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 1120px;
+        width: 1100px;
+        background-color: lightgray;
+        justify-content: center;
+        margin: auto;
+    }
+
+    textarea {
+        border: 3px solid black;
+    }
+    header{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    :root {
+        --gray-color: #717271;
+        --light-gray-color: #dee0e5;
+        --midium-gray-color: #999fa6;
+        --button-gray-color: #f0f1f0;
+        --footer-back-color: #f1f2f1;
+        --footer-border-color: #e3e4e3;
+        --button-text-gray-color: #5F6368;
+        --font-family: 'Apple SD Gothic Neo',arial,sans-serif;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: var( --footer-back-color);
+        color: var( --button-text-gray-color);
+        font-size: 15px;
+    }
+
+        footer .country {
+            border-top: solid 1px var(--footer-border-color);
+            padding-left: 32px;
+            line-height: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer .foot-links-wrap {
+            border-top: solid 1px var(--footer-border-color);
+            padding-left: 32px;
+            line-height: 40px;
+            height: 40px;
+            display: flex;
+            flex: auto;
+        }
+
+            footer .foot-links-wrap .foot-links-wrap-right {
+                width: 50%
+            }
+
+                footer .foot-links-wrap .foot-links-wrap-right ul {
+                    list-style: none;
+                    display: flex;
+                }
+
+                    footer .foot-links-wrap .foot-links-wrap-right ul li a {
+                        display: block;
+                        padding-right: 28px;
+                        text-decoration: none;
+                    }
+
+            footer .foot-links-wrap .foot-links-wrap-left {
+                width: 50%;
+            }
+
+                footer .foot-links-wrap .foot-links-wrap-left ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                    footer .foot-links-wrap .foot-links-wrap-left ul li a {
+                        display: block;
+                        padding-right: 28px;
+                        text-decoration: none;
+                    }
+                
+    
+</style>
+</HTML>
