@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="EUC-KR">
+        <link rel = "stylesheet" href = "style.css" type="text/css">
+
+        <!--부트스트랩-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class = "all">
+            <header class = "logo">
+                로고
+            </header>
+            <div class="out"> 
+                <section class = "question">
+                    <div class="text-center pt-5 questiontitle">
+                        <img src="question.png" width="150px">
+                        수열 중에 피보나치 수열에 대한 정의가 궁금합니다.
+                    </div>
+                    <div class="pt-5 questionsub"> 
+                        #수열, #피보나치, #배열
+                    </div>
+                </section>
+                <section class = "answer borderline">
+                    피보나치 수열이란 처음 두 항을 1과 1로 한 후, 그 다음 항부터는 <br>
+                    바로 앞의 두개의 항을 더해 만드는 수열을 말합니다.<br><br>
+                    그러므로 피보나치 수열의 처음 몇 개의 항은<br><br>
+                    1,1,2,3,5,8,13,21,34,55......
+                    이고 이 수열에 속한 수를 피보나치 수라고합니다.<br><br>
+                    피보나치 수열을 공식으로 나타낸다면 다음과 같습니다.<br><br>
+                    f(n) = 1 (n <= 2 일 때)<br>
+                    f(n) = f(n-2) + f(n-1) (n > 2일 때)
+                </section>
+                <div class="button col-10 pt-3">
+                    <button type="button" class="btn float-right" onclick="location.href='../quiz1_1/page4_quiz1_1.html'">다음</button>
+                </div>
+            </div>
+            
+           
+            <footer>
+                copyright
+            </footer>
+        </div>
+    </body>
+</html>
