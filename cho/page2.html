@@ -1,21 +1,201 @@
 ﻿<script>
-    function press(f) {
-        if (f.keyCode == 13) {
-            formname.submit();
+    function press(f){
+        if(f.keyCode == 13){
+            action.submit();
         }
     }
-</script>
-<!DOCTYPE html>
+    </script>
 
+<!DOCTYPE html>
 <html lang="kr">
 <head>
     <meta charset="EUC-KR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
-    <title>Google</title>
-    <link rel="stylesheet" sype="text/css" href="스타일.css">
-    
+    <title>Well-known</title>
+    <style>
+        :root{
+            --gray-color :#717271;
+            --light-gray-color: #dee0e5;
+            --midium-gray-color: #999fa6;
+            --button-gray-color: #f0f1f0;
+            --footer-back-color: #f1f2f1;
+            --footer-border-color: #e3e4e3;
+        
+            --button-text-gray-color: #5F6368;
+            --font-family: 'Apple SD Gothic Neo',arial,sans-serif;
+        }  
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: var(--font-family);
+        }
+        
+        .top-header{
+            width: 100%;
+            height: 50px;
+            
+        }
+        .top-header .top-nav{
+            display: flex;
+            height: 36px;
+            padding-top: 18px;
+        
+            padding-left: 30px;
+            padding-right: 30px;
+            align-content: center;
+        }
+        .top-header .top-nav ul{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            align-content: center;        
+        }
+        .top-header .top-nav ul li{
+            margin-right: 18px;
+            height: 36px;
+        }
+        .top-header .top-nav ul li a{
+            text-decoration: none;
+            font-size: 13px;
+            display: block;
+            line-height: 36px;
+            width: 36;
+            color:var(   --gray-color )
+        }
+        .top-header .top-nav ul li a:hover{
+            text-decoration:underline
+        }
+        .top-header .top-nav .profile_img_wrap img{
+            width:36px;
+            height:36px;
+            border-radius: 18px;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+        .top-header .top-nav .upper_left_img_wrap{
+            justify-content: flex-start;
+        }
+        .top-header .top-nav #action-area{
+            justify-content: flex-start;
+            margin-right: auto;
+        }
+
+        .top-header .top-nav #action-area .small_searchbar_wrap{
+            padding-left:-25%;
+            padding-top:5%;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: var( --footer-back-color);
+            color: var( --button-text-gray-color);
+            font-size:15px;
+        }
+        footer .country{
+            border-top: solid 1px var(--footer-border-color);
+            padding-left: 32px;
+            line-height: 40px;
+            height: 40px;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .foot-links-wrap{
+            border-top: solid 1px var(--footer-border-color);
+            padding-left: 32px;
+            line-height: 40px;
+        
+            height: 40px;
+            display: flex;
+            flex:auto;
+        }
+        footer .foot-links-wrap .foot-links-wrap-right{
+            width:50%
+        }
+        footer .foot-links-wrap .foot-links-wrap-right ul{
+            list-style: none;
+            display: flex;
+        
+        }
+        footer .foot-links-wrap .foot-links-wrap-right  ul li a{
+            display: block;
+            padding-right: 28px;
+            text-decoration: none;
+            
+        }
+        footer .foot-links-wrap .foot-links-wrap-left{
+            width: 50%;
+        }
+        footer .foot-links-wrap .foot-links-wrap-left ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        footer .foot-links-wrap .foot-links-wrap-left ul li a{
+            display: block;
+            padding-right: 28px;
+            text-decoration: none;
+        }
+        .list {
+            display:flex;
+            height:100vh;
+            flex-wrap:wrap;
+            flex-direction:column;
+            /* flex-flow:column wrap; */
+            box-sizing:border-box;
+        }
+        .list li {
+            width:33.33%;
+            flex-basis:50%;
+            padding:20px;
+            box-sizing:border-box;
+            color:#fff;
+        }
+        .content-section{
+            width:100%;
+            height: 100%;
+            align-content: center;
+            margin-left: 10%;
+        }
+        #first_row{
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
+        #second_row{
+            margin-top: auto;
+        }
+        #first_column {
+            float:left; width:80%; height:75%; background-color:#234234;
+        }
+        #second_column {
+            display: block; width:50%; height:50%; background-color:#666666; margin-left:50%;
+        }
+        .content-section .box_wrap{
+            display: flex;
+            align-items: center;
+        }
+        .content-section .box_wrap #inner{
+            margin: auto 0;
+        }
+        .flex-container.stretch{
+            align-content: space-between;
+        }
+
+        .flex-item{
+            width: 50px;
+            height: 25%;
+            margin: 1%;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            top: 50%;
+        }
+
+    </style>
 </head>
 <body>
     <header class="top-header">
@@ -28,7 +208,7 @@
             <form action="../cho/page2.html" method="post" name="search-area" id="action-area">
                 <div class="small_searchbar_wrap">
                     <i class="fas fa-search"></i>
-                    <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28" />
+                    <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28"/>
                     <button id="go_next_page" style="border: 0; background-color: white" type="button" title="submit" onclick="location.href='../cho/page2.html'"><a id="submit-form"><i class="far fa-paper-plane"></i></a></button>
                 </div>
             </form>
@@ -43,24 +223,20 @@
         <hr width="100%" color="black" size="1">
     </header>
 
-    <section class="main-section">
-    </section>
-    <main-section>
-            <div class="main_div">
-                <h1> 질문 밑 답변 (미리보기) #a=href(준비)  </h1>
+    <section class="content-section">
+        <div id="first_row"> 
+            <div id="first_column" style="margin-left: auto;">
+                <div class="flex-container stretch">
+                    <div class="flex-item color-lightseagreen"><a href="../kim/main.html">1</div>
+                    <div class="flex-item color-lightseagreen"><a href="../kim/main.html">2</div>
+                    <div class="flex-item color-lightseagreen"><a href="../kim/main.html">3</div>
+                    <div class="flex-item color-lightseagreen"><a href="../kim/main.html">4</div>
+                </div>
             </div>
-            <div class="main_div">
-                <h1> 질문 밑 답변 (미리보기) </h1>
-            </div>
-            <div class="main_div">
-                <h1> 질문 밑 답변 (미리보기) </h1>
-            </div>
-            <div class="main_div">
-                <h1> 질문 밑 답변 (미리보기) </h1>
-            </div>
-        <div> <h1>질문 등록하기</h1> </div>
-</main-section>
+        </div>
 
+        
+    </section>
     <footer>
         <div class="country">
             <span>현재 접속 국가 : 대한민국</span>
@@ -79,5 +255,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
+
