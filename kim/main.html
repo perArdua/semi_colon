@@ -1,7 +1,7 @@
 <script>
 function press(f){
     if(f.keyCode == 13){
-        formname.submit();
+        action.submit();
     }
 }
 </script>
@@ -13,37 +13,35 @@ function press(f){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
-    <title>Google</title>
+    <title>Well-Known</title>
     
 </head>
 <body>
     <header class="top-header">
         <nav class="top-nav">
-            <ul>
-                <li><a href="#">무슨</a></li>
-                <li><a href="#">내용을</a></li>
-                <li><a href="#"><i class="fas fa-bars"></i></a></li>
-            </ul>
             <div class="profile_img_wrap">
-                <img src="logo_1.png">
+                <img src="deer.jpg">
             </div>
+            <ul>
+                <li>수뭉이님 환영합니다</li>
+            </ul>
         </nav>
         <hr width="100%" color="black" size="1">
     </header>
     <section class="main-section">
         <div class="logo-wrap">
-            <a href="main.html"><img src="logo_letter.jpg" height="125" width="550"></a>
+            <a href="main.html"><img src="small_logo_letter.jpg" height="125" width="550" alt="error"></a>
         </div>
-        <form action="main.html" method="post" name="search-area" id="action-area">
+        <form action="../cho/page2.html" method="post" name="search-area" id="action-area">
             <div class="searchbar-wrap">
                 <i class="fas fa-search"></i>
                 <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)"/>
-                <button style="border: 0; background-color: white" type="button" title="submit"><a id="submit-form" href="main.html"><i class="far fa-paper-plane"></i></a></button>
+                <button id="go_next_page" style="border: 0; background-color: white" type="button" title="submit" onclick="location.href='../cho/page2.html'"><a id="submit-form"><i class="far fa-paper-plane"></i></a></button>
             </div> 
         </form>
         <div class="buttons">
-            <button>로그인 버튼..?</button>
-            <button>질문 답변페이지 이동??</button>
+            <button type="button" onclick="location.href='../lee/page5.html'">질문 게시판으로 이동</button>
+            <button type="button" onclick="location.href='../cho/page6.html'">전문가 답변 페이지 이동</button>
         </div>
     </section>
 
