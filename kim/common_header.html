@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="EUC-KR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well-known</title>
+    <style>
+        :root{
+            --gray-color :#717271;
+            --light-gray-color: #dee0e5;
+            --midium-gray-color: #999fa6;
+            --button-gray-color: #f0f1f0;
+            --footer-back-color: #f1f2f1;
+            --footer-border-color: #e3e4e3;
+        
+            --button-text-gray-color: #5F6368;
+            --font-family: 'Apple SD Gothic Neo',arial,sans-serif;
+        }  
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: var(--font-family);
+        }
+        
+        .top-header{
+            width: 100%;
+            height: 50px;
+            
+        }
+        .top-header .top-nav{
+            display: flex;
+            height: 36px;
+            justify-content: flex-end;
+            padding-top: 18px;
+        
+            padding-left: 30px;
+            padding-right: 30px;
+            align-content: center;
+        }
+        .top-header .top-nav2{
+            display: flex;
+            height: 36px;
+            justify-content: flex-start;
+            
+            padding-left: 30px;
+            padding-right: 30px;
+            align-content: center;
+        }
+        .top-header .top-nav ul{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            align-content: center;        
+        }
+        .top-header .top-nav ul li{
+            margin-right: 18px;
+            height: 36px;
+        }
+        .top-header .top-nav ul li a{
+            text-decoration: none;
+            font-size: 13px;
+            display: block;
+            line-height: 36px;
+            width: 36;
+            color:var(   --gray-color )
+        }
+        .top-header .top-nav ul li a:hover{
+            text-decoration:underline
+        }
+        .top-header .top-nav .profile_img_wrap img{
+            width:36px;
+            height:36px;
+            border-radius: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <nav class="top-nav">
+            <div class="profile_img_wrap">
+                <img src="deer.jpg" alt="deer.jpg파일 확인">
+            </div>
+            <ul>
+                <li>수뭉이님 환영합니다</li>
+            </ul>
+        </nav>
+
+        <nav class="top-nav2">
+            <div class="upper_left_img_wrap">
+                <a href="main.html">
+                    <img src="small_logo_letter.jpg" width="100%" height="100%">
+                </a>
+            </div>
+        </nav>
+        <hr width="100%" color="black" size="1">
+    </header>
+</body>
+</html>
