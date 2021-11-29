@@ -30,18 +30,8 @@
         .top-header .top-nav{
             display: flex;
             height: 36px;
-            justify-content: flex-end;
             padding-top: 18px;
         
-            padding-left: 30px;
-            padding-right: 30px;
-            align-content: center;
-        }
-        .top-header .top-nav2{
-            display: flex;
-            height: 36px;
-            justify-content: flex-start;
-            
             padding-left: 30px;
             padding-right: 30px;
             align-content: center;
@@ -71,28 +61,107 @@
             width:36px;
             height:36px;
             border-radius: 18px;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+        .top-header .top-nav .upper_left_img_wrap{
+            justify-content: flex-start;
+            margin-right: auto;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: var( --footer-back-color);
+            color: var( --button-text-gray-color);
+            font-size:15px;
+        }
+        footer .country{
+            border-top: solid 1px var(--footer-border-color);
+            padding-left: 32px;
+            line-height: 40px;
+            height: 40px;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .foot-links-wrap{
+            border-top: solid 1px var(--footer-border-color);
+            padding-left: 32px;
+            line-height: 40px;
+        
+            height: 40px;
+            display: flex;
+            flex:auto;
+        }
+        footer .foot-links-wrap .foot-links-wrap-right{
+            width:50%
+        }
+        footer .foot-links-wrap .foot-links-wrap-right ul{
+            list-style: none;
+            display: flex;
+        
+        }
+        footer .foot-links-wrap .foot-links-wrap-right  ul li a{
+            display: block;
+            padding-right: 28px;
+            text-decoration: none;
+            
+        }
+        footer .foot-links-wrap .foot-links-wrap-left{
+            width: 50%;
+        }
+        footer .foot-links-wrap .foot-links-wrap-left ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        footer .foot-links-wrap .foot-links-wrap-left ul li a{
+            display: block;
+            padding-right: 28px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header class="top-header">
         <nav class="top-nav">
+            <div class="upper_left_img_wrap">
+                <a href="../kim/main.html">
+                    <img src="../kim/very_small_letter.jpg" width="100%" height="100%">
+                </a>
+            </div>
+
             <div class="profile_img_wrap">
-                <img src="deer.jpg" alt="deer.jpg파일 확인">
+                <img src="../kim/deer.jpg">
             </div>
             <ul>
                 <li>수뭉이님 환영합니다</li>
             </ul>
         </nav>
 
-        <nav class="top-nav2">
-            <div class="upper_left_img_wrap">
-                <a href="main.html">
-                    <img src="small_logo_letter.jpg" width="100%" height="100%">
-                </a>
-            </div>
-        </nav>
         <hr width="100%" color="black" size="1">
     </header>
+
+    <footer>
+        <div class="country">
+            <span>현재 접속 국가 : 대한민국</span>
+        </div>
+        <div class="foot-links-wrap">
+            <div class="foot-links-wrap-right">
+
+            </div>
+            <div class="foot-links-wrap-left">
+                <ul>
+                    <li><a href="../kim/info.html">Well-Known 정보</a></li>
+                    <li><a href="../kim/main.html">이용 약관</a></li>
+                    <li><a href="../kim/main.html">개인정보처리방침</a></li>
+                    <li><a href="../kim/main.html">게시중단요청서비스</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
