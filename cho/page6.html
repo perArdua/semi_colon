@@ -1,118 +1,205 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<script>
+    function press(f) {
+        if (f.keyCode == 13) {
+            action.submit();
+        }
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="kr">
 <head>
     <title>질문 답변 대기 페이지</title>
-    <link rel="stylesheet" href="StyleSheet1.css" type="text/css">
-
-    <!--부트스트랩-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="EUC-KR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well-known</title>
     <style>
-        div {
-            width: 100px;
-            height: 50px;
-            background-color: lightgray;
-            border: 1px lightgray;
-            text-align: center
+        :root {
+            --gray-color: #717271;
+            --light-gray-color: #dee0e5;
+            --midium-gray-color: #999fa6;
+            --button-gray-color: #f0f1f0;
+            --footer-back-color: #f1f2f1;
+            --footer-border-color: #e3e4e3;
+            --button-text-gray-color: #5F6368;
+            --font-family: 'Apple SD Gothic Neo',arial,sans-serif;
         }
-            div#box1 {
-                transform: translate(0px, 0px);
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: var(--font-family);
+        }
+
+        .top-header {
+            width: 100%;
+            height: 50px;
+        }
+
+            .top-header .top-nav {
+                display: flex;
+                height: 36px;
+                padding-top: 18px;
+                padding-left: 30px;
+                padding-right: 30px;
+                align-content: center;
             }
 
+                .top-header .top-nav ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    list-style: none;
+                    align-content: center;
+                }
 
-            div#box2 {
-                transform: translate(887.5px, -50px);
+                    .top-header .top-nav ul li {
+                        margin-right: 18px;
+                        height: 36px;
+                    }
+
+                        .top-header .top-nav ul li a {
+                            text-decoration: none;
+                            font-size: 13px;
+                            display: block;
+                            line-height: 36px;
+                            width: 36;
+                            color: var( --gray-color )
+                        }
+
+                            .top-header .top-nav ul li a:hover {
+                                text-decoration: underline
+                            }
+
+                .top-header .top-nav .profile_img_wrap img {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 18px;
+                    justify-content: flex-end;
+                    margin-left: auto;
+                }
+
+                .top-header .top-nav .upper_left_img_wrap {
+                    justify-content: flex-start;
+                }
+
+                .top-header .top-nav #action-area {
+                    justify-content: flex-start;
+                    margin-right: auto;
+                }
+
+                    .top-header .top-nav #action-area .small_searchbar_wrap {
+                        padding-left: -25%;
+                        padding-top: 5%;
+                    }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: var( --footer-back-color);
+            color: var( --button-text-gray-color);
+            font-size: 15px;
+        }
+
+            footer .country {
+                border-top: solid 1px var(--footer-border-color);
+                padding-left: 32px;
+                line-height: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
-            div#box3 {
-                transform: scale(2.5, 1) translate(32.5px, 0px);
+            footer .foot-links-wrap {
+                border-top: solid 1px var(--footer-border-color);
+                padding-left: 32px;
+                line-height: 40px;
+                height: 40px;
+                display: flex;
+                flex: auto;
             }
 
+                footer .foot-links-wrap .foot-links-wrap-right {
+                    width: 50%
+                }
 
-            div#box4 {
-                transform: scale(2.5, 1) translate(32.5px, 50px);
-            }
+                    footer .foot-links-wrap .foot-links-wrap-right ul {
+                        list-style: none;
+                        display: flex;
+                    }
 
-            div#box5 {
-                transform: scale(2.5, 1) translate(32.5px, 100px);
-            }
+                        footer .foot-links-wrap .foot-links-wrap-right ul li a {
+                            display: block;
+                            padding-right: 28px;
+                            text-decoration: none;
+                        }
 
-            div#box6 {
-                transform: scale(2.5, 1) translate(382.5px,-162.5px);
-            }
+                footer .foot-links-wrap .foot-links-wrap-left {
+                    width: 50%;
+                }
 
-            div#box7 {
-                transform: scale(2.5, 1) translate(382.5px,-112.5px);
-            }
+                    footer .foot-links-wrap .foot-links-wrap-left ul {
+                        list-style: none;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
 
-            div#box8 {
-                transform: scale(2.5, 1) translate(382.5px,-62.5px);
-            }
-
-            div#box9 {
-                transform: translate(887.5px, 50px);
-            }
-
-            div#box10 {
-                transform: translate(0px, 0px);
-            }
-
-            div#box11 {
-                transform: scale(2.5, 1) translate(32.5px, 50px);
-            }
-
-            div#box12 {
-                transform: scale(2.5, 1) translate(32.5px, 100px);
-            }
-
-            div#box13 {
-                transform: scale(2.5, 1) translate(32.5px, 150px);
-            }
-
-            div#box14 {
-                transform: scale(2.5, 1) translate(382.5px,-112.5px);
-            }
-
-            div#box15 {
-                transform: scale(2.5, 1) translate(382.5px,-62.5px);
-            }
-
-            div#box16 {
-                transform: scale(2.5, 1) translate(382.5px,-12.5px);
-            }
+                        footer .foot-links-wrap .foot-links-wrap-left ul li a {
+                            display: block;
+                            padding-right: 28px;
+                            text-decoration: none;
+                        }
+    
     </style>
+    
 </head>
 <body>
-    <div class="all">
-        <header class="logo">
-            로고
-        </header>
-        <div class="out">
-            <div id="box1">태그</div>
-            <div id="box2"> 태그 </div>
-            <div id="box3"> 질문 </div>
-            <div id="box4"> 질문 </div>
-            <div id="box5"> 질문 </div>
-            <div id="box6"> 질문 </div>
-            <div id="box7"> 질문 </div>
-            <div id="box8"> 질문 </div>
-            <div id="box9"> 태그 </div>
-            <div id="box10"> 태그 </div>
-            <div id="box11"> 질문 </div>
-            <div id="box12"> 질문 </div>
-            <div id="box13"> 질문 </div>
-            <div id="box14"> 질문 </div>
-            <div id="box15"> 질문 </div>
-            <div id="box16"> 질문 </div>
-        </div>
+    <header class="top-header">
+        <nav class="top-nav">
+            <div class="upper_left_img_wrap">
+                <a href="../kim/main.html">
+                    <img src="../kim/very_small_letter_50h.jpg" width="100%" height="100%">
+                </a>
+            </div>
+            <form action="../cho/page2.html" method="post" name="search-area" id="action-area">
+                <div class="small_searchbar_wrap">
+                    <i class="fas fa-search"></i>
+                    <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28" />
+                    <button id="go_next_page" style="border: 0; background-color: white" type="button" title="submit" onclick="location.href='../cho/page2.html'"><a id="submit-form"><i class="far fa-paper-plane"></i></a></button>
+                </div>
+            </form>
+            <div class="profile_img_wrap">
+                <img src="../kim/deer.jpg">
+            </div>
+            <ul>
+                <li>수뭉이님 환영합니다</li>
+            </ul>
+        </nav>
 
-        <footer>
-            copyright
-        </footer>
-    </div>
-    </body>
+
+        <hr width="100%" color="black" size="1">
+    </header>
+
+    <footer>
+        <div class="country">
+            <span>현재 접속 국가 : 대한민국</span>
+        </div>
+        <div class="foot-links-wrap">
+            <div class="foot-links-wrap-right">
+
+            </div>
+            <div class="foot-links-wrap-left">
+                <ul>
+                    <li><a href="../kim/info.html">Well-Known 정보</a></li>
+                    <li><a href="../kim/main.html">이용 약관</a></li>
+                    <li><a href="../kim/main.html">개인정보처리방침</a></li>
+                    <li><a href="../kim/main.html">게시중단요청서비스</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
 

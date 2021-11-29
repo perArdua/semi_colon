@@ -1,4 +1,5 @@
 
+
 :root {
     --gray-color: #717271;
     --light-gray-color: #dee0e5;
@@ -24,27 +25,59 @@
     .top-header .top-nav {
         display: flex;
         height: 36px;
-        justify-content: flex-end;
         padding-top: 18px;
         padding-left: 30px;
         padding-right: 30px;
-        float: left;
+        align-content: center;
     }
+
+        .top-header .top-nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            align-content: center;
+        }
+
+            .top-header .top-nav ul li {
+                margin-right: 18px;
+                height: 36px;
+            }
+
+                .top-header .top-nav ul li a {
+                    text-decoration: none;
+                    font-size: 13px;
+                    display: block;
+                    line-height: 36px;
+                    width: 36;
+                    color: var( --gray-color )
+                }
+
+                    .top-header .top-nav ul li a:hover {
+                        text-decoration: underline
+                    }
 
         .top-header .top-nav .profile_img_wrap img {
             width: 36px;
             height: 36px;
             border-radius: 18px;
-         
+            justify-content: flex-end;
+            margin-left: auto;
         }
 
-.main-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
+        .top-header .top-nav .upper_left_img_wrap {
+            justify-content: flex-start;
+        }
 
-  
+        .top-header .top-nav #action-area {
+            justify-content: flex-start;
+            margin-right: auto;
+        }
+
+            .top-header .top-nav #action-area .small_searchbar_wrap {
+                padding-left: -25%;
+                padding-top: 5%;
+            }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -103,4 +136,12 @@ footer {
                     padding-right: 28px;
                     text-decoration: none;
                 }
-                
+        }
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+  
