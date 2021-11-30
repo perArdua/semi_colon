@@ -4,75 +4,84 @@
         <TITLE>Answer</TITLE>
         <meta charset="EUC-KR">
     </HEAD>
-        <BODY>
-            <header class="top-header">
-                <nav class="top-nav">
-                    <div class="upper_left_img_wrap">
-                        <a href="../kim/main.html">
-                            <img src="../kim/very_small_letter_50h.jpg" width="100%" height="100%">
-                        </a>
+    <BODY>
+        <header class="top-header">
+            <nav class="top-nav">
+                <div class="upper_left_img_wrap">
+                    <a href="../kim/main.html">
+                        <img src="../kim/very_small_letter_50h.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <form action="../cho/page2.html" method="post" name="search-area" id="action-area">
+                    <div class="small_searchbar_wrap">
+                        <i class="fas fa-search"></i>
+                        <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28" />
+                        <button id="go_next_page" style="border: 0; background-color: white" type="button" title="submit" onclick="location.href='../cho/page2.html'"><a id="submit-form"><i class="far fa-paper-plane"></i></a></button>
                     </div>
-                    <form action="../cho/page2.html" method="post" name="search-area" id="action-area">
-                        <div class="small_searchbar_wrap">
-                            <i class="fas fa-search"></i>
-                            <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28" />
-                            <button id="go_next_page" style="border: 0; background-color: white" type="button" title="submit" onclick="location.href='../cho/page2.html'"><a id="submit-form"><i class="far fa-paper-plane"></i></a></button>
-                        </div>
-                    </form>
-                    <div class="profile_img_wrap">
-                        <img src="../kim/deer.jpg">
-                    </div>
-                    <ul>
-                        <li>수뭉이 전문가님 환영합니다</li>
-                    </ul>
-                </nav>
+                </form>
+                <div class="profile_img_wrap">
+                    <img src="../lee/professor.png">
+                </div>
+                <ul>
+                    <li>스피드웨건 전문가님 환영합니다</li>
+                </ul>
+            </nav>
     
-                <hr width="100%" color="black" size="1">
-            </header>
+            <hr width="100%" color="black" size="1">
+        </header>
     
-            <div class="title" style="border: none;" width="50%" align="center">
-                <img src="../lee/Q.png" width="60" height="30" align="bottom">
-                <font size="40">선형대수학 질문드립니다.</font>
-            </div>
+        <div class="title" style="border: none;" width="50%" align="center">
+            <img src="../lee/Q.png" width="60" height="30" align="bottom">
+            <font size="40">선형대수학 질문드립니다.</font>
+        </div>
+    
+        <div class="container" style="none; min-width: 1000px;">
+            <br />오늘 벡터 파트의 선형독립과 종속에 관하여 배웠는데
+            <br />도무지 이해가 안 가 질문 드립니다.
+        </div>
+        <div class="title" style="border: none;" width="50%" align="center">
+            <img src="../lee/deer-radious.png" width="25px" height="25px" style="vertical-align:middle;">
+            수학이 궁금한 수뭉님 · 조회수 17 · 2시간 전
+        </div>
         
-            <div class="container" style="none; min-width: 1000px;">
-                <br />오늘 벡터 파트의 선형독립과 종속에 관하여 배웠는데
-                <br />도무지 이해가 안 가 질문 드립니다.
+        <div class="ans">
+            <div class="proans">
+                <img src="../lee/professor.png" width="30px" height="30px" style="vertical-align:middle;">
+                스피드웨건 전문가님! 답변해주세요
             </div>
-            <div class="ans">
-                <p>
-                    <div>
-                        <textarea cols="120" rows="50" placeholder="답변을 입력해주세요"></textarea>
-                    </div>
-    
-                    <div class="button">
-                        <input type="button" value="답변입력" onclick="location.href='../cho/page6.html'" button/>
-                    </div>
-                </p>
+                <div>
+                    <textarea cols="50" rows="23" placeholder="답변을 입력하세요" style="font-size: 30px;"></textarea>
+                </div>
+                <br/>
+                <div class="button">
+                    <input type="button" value="답변입력" onclick="location.href='../cho/page6.html'" button/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="답변취소" onclick="location.href='../cho/page2.html'" button/>
+                </div>
+        </div>
+        <footer>
+            <div class="country">
+                <span>현재 접속 국가 : 대한민국</span>
             </div>
-            <footer>
-                <div class="country">
-                    <span>현재 접속 국가 : 대한민국</span>
+            <div class="foot-links-wrap">
+                <div class="foot-links-wrap-right">
                 </div>
-                <div class="foot-links-wrap">
-                    <div class="foot-links-wrap-right">
-                    </div>
-                    <div class="foot-links-wrap-left">
-                        <ul>
-                            <li><a href="../kim/info.html">Well-Known 정보</a></li>
-                            <li><a href="../kim/main.html">이용 약관</a></li>
-                            <li><a href="../kim/main.html">개인정보처리방침</a></li>
-                            <li><a href="../kim/main.html">게시중단요청서비스</a></li>
-                        </ul>
-                        <br />
-                    </div>
+                <div class="foot-links-wrap-left">
+                    <ul>
+                        <li><a href="../kim/info.html">Well-Known 정보</a></li>
+                        <li><a href="../kim/main.html">이용 약관</a></li>
+                        <li><a href="../kim/main.html">개인정보처리방침</a></li>
+                        <li><a href="../kim/main.html">게시중단요청서비스</a></li>
+                    </ul>
+                    <br />
                 </div>
-            </footer>
+            </div>
+        </footer>
     
     
     
     
-        </BODY>
+    </BODY>
     <style>
     
         div.container {
@@ -81,34 +90,41 @@
             flex-direction: column;
             align-items: center;
         }
+    
         div.ans {
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 100%;
             width: 100%;
-            background-color: lightgray;
-            justify-content: center;
+            background-color: F6F6F6;
             margin: auto;
             padding-bottom: 1%;
         }
-        div.title{
+    
+        div.title {
             top: 10%;
             left: 50%;
             margin: auto;
         }
+    
         textarea {
-            border: 3px solid black;
+            border: none;
             top: 50%;
         }
+    
         div.button {
             display: flex;
             width: 100%;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-           
+            padding-left: 95%;
         }
-        
+        div.proans{
+            font-size: 24px;
+        }
+    
+    
         :root {
             --gray-color: #717271;
             --light-gray-color: #dee0e5;
