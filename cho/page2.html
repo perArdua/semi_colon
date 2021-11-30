@@ -170,7 +170,7 @@
             float:left; width:100%; height:75%; background-color:#999fa6;
         }
         #second_column {
-            display: block; width:100%; height:50%; background-color:#666666; margin-left:50%;
+            display: block; width:20%; height:10%; background-color:#666666; margin-left:47.5%;
         }
         .content-section .box_wrap{
             display: flex;
@@ -192,6 +192,22 @@
             text-align: center;
             position: relative;
             left: 50%;
+            top: 50%;
+        }
+
+        .second-container.stretch{
+            text-align:right;display:table-cell;vertical-align:middle;
+        }
+
+        .second-item{
+            width: 150px;
+            height: 25%;
+            margin: 1%;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            position: relative;
+            left: 70%;
             top: 50%;
         }
 
@@ -227,10 +243,13 @@
         <div id="first_row"> 
             <div id="first_column" style="margin-left: auto;">
                 <div class="flex-container stretch">
-                    <div class="flex-item color-lightseagreen"><a href="../lee/page7_question1.html">질문 및 답변(미리보기)</div>
-                    <div class="flex-item color-lightseagreen"><a href="../lee/page7_question2.html">질문 및 답변(미리보기)</div>
-                    <div class="flex-item color-lightseagreen"><a href="../lee/page7_question3.html">질문 및 답변(미리보기)</div>
-                    <div class="flex-item color-lightseagreen"><a href="../lee/page5.html">질문 등록하기</div>
+                    <div class="flex-item color-lightseagreen"><a href="../jeon/question1/answer1/page3_answer1.html">질문 및 답변(미리보기)</div>
+                    <div class="flex-item color-lightseagreen"><a href="../jeon/question2/answer2/page3_answer2.html">질문 및 답변(미리보기)</div>
+                    <div class="flex-item color-lightseagreen"><a href="../jeon/question3/page3_answer3.html">질문 및 답변(미리보기)</a></div>
+                </div>
+                <div id="second_column" style="position:relative; bottom:0px">
+                <div class="second-container stretch">
+                    <div class="second-item color-lightseagreen"><a href="../lee/page5.html">질문 등록하기</a></div>
                 </div>
             </div>
         </div>
