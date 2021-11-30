@@ -1,13 +1,7 @@
 .all{
     width: 1200px;
     height: 100%;
-
     margin : auto;
-}
-
-.logo{
-    height: 150px;
-    background-color: blue;
 }
 
 .out{
@@ -44,11 +38,10 @@
     margin: auto;
 }
 
-
-
 .borderline{
     border:1px solid gray;
 }
+
 :root{
     --gray-color :#717271;
     --light-gray-color: #dee0e5;

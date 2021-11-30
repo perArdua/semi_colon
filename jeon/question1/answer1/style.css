@@ -1,12 +1,8 @@
 .all{
     width: 1200px;
     height: 100%;
-
-    margin : auto;
-    
+    margin : auto;   
 }
-
-
 .out{
     height: 800px;
     background-color: lightgray;
