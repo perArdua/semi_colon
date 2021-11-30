@@ -35,21 +35,29 @@
         <font size="40">ETF/ETN 기본 예탁금 뜻이 뭔가요?</font>
     </div>
 
-    <div class="container" style="none; min-width: 1000px;">
+    <div class="container" style=" min-width: 1000px;">
         ETF/ETN 거래를 해보려고 교육 이수까지 했습니다. 그런데 기본 예탁금 의미를 정확히 모르겠어서요.
         <br />ETF 기본예탁금 1천만원 뜻이 1천만원어치 ETF/ETN 종목을 매수해야한다는 뜻인가요?
         <br />아니면 증권계좌에 1천만원을 넣어둬야 ETF/ETN 거래를 할수 있다는 뜻인가요.
+        <br />#경제 #ETF
     </div>
+    <div class="title" style="border: none;" width="50%" align="center">
+        <img src="../lee/deer-radious.png" width="25px" height="25px" style="vertical-align:middle;">
+        경제가 궁금한 수뭉님 · 조회수 7 · 30분 전
+    </div>
+    
     <div class="ans">
-        <p>
+        <div class="proans">
+            <img src="../lee/deer-radious.png" width="30px" height="30px" style="vertical-align:middle;">
+            수뭉 전문가님! 답변해주세요
+        </div>
             <div>
-                <textarea cols="120" rows="50" placeholder="답변을 입력하세요"></textarea>
+                <textarea cols="50" rows="23" placeholder="답변을 입력하세요" style="font-size: 30px;"></textarea>
             </div>
-
             <div class="button">
-                <input type="button" value="질문등록" />
+                <input type="button" value="답변입력" onclick="location.href='../cho/page6.html'" button/>
+                <input type="button" value="답변취소" onclick="location.href='../cho/page2.html'" button/>
             </div>
-        </p>
     </div>
     <footer>
         <div class="country">
@@ -89,8 +97,8 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        background-color: lightgray;
-        justify-content: center;
+        background-color: F6F6F6;
+        
         margin: auto;
         padding-bottom: 1%;
     }
@@ -109,8 +117,12 @@
     div.button {
         display: flex;
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        padding-left: 95%;
+    }
+    div.proans{
+        font-size: 24px;
     }
 
 
