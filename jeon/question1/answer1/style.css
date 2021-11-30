@@ -109,10 +109,13 @@
     justify-content: flex-start;
     margin-right: auto;
 }
+.search-input{
+    height: 20px;
+}
 
 .top-header .top-nav #action-area .small_searchbar_wrap{
-    padding-left:-25%;
-    padding-top:5%;
+    padding-left:5%;
+    
 }
 footer{
     position: fixed;
