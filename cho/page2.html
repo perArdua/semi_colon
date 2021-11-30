@@ -1,16 +1,17 @@
 ﻿<script>
-    function press(f){
-        if(f.keyCode == 13){
-            action.submit();
+    function press(f) {
+        if (f.keyCode == 13) {
+            formname.submit();
         }
     }
-    </script>
-
+</script>
 <!DOCTYPE html>
+
 <html lang="kr">
 <head>
     <meta charset="EUC-KR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Well-known</title>
     <style>
         :root{
@@ -212,6 +213,13 @@
         }
 
     </style>
+=======
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
+    <title>Google</title>
+    <link rel="stylesheet" sype="text/css" href="스타일.css">
+    
+>>>>>>> c187fe9f604dfbb9304be6879a30833cc56dca58
 </head>
 <body>
     <header class="top-header">
@@ -224,7 +232,7 @@
             <form action="../cho/page2.html" method="post" name="search-area" id="action-area">
                 <div class="small_searchbar_wrap">
                     <i class="fas fa-search"></i>
-                    <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28"/>
+                    <input class="search-input" type="text" placeholder="검색할 내용 혹은 태그를 입력하세요." onkeypress="JavaScript:press(this.form)" size="28" />
                     <button id="go_next_page" style="border: 0; background-color: white" type="button" title="submit" onclick="location.href='../cho/page2.html'"><a id="submit-form"><i class="far fa-paper-plane"></i></a></button>
                 </div>
             </form>
@@ -239,6 +247,7 @@
         <hr width="100%" color="black" size="1">
     </header>
 
+<<<<<<< HEAD
     <section class="content-section">
         <div id="first_row"> 
             <div id="first_column" style="margin-left: auto;">
@@ -256,11 +265,26 @@
                     <div class="flex-item color-lightseagreen"><a href="../lee/page5.html">질문 등록하기</div>
 >>>>>>> 27e0d55d3b508d86359e5888e8f12197b3c3f72e
                 </div>
-            </div>
-        </div>
-
-        
+=======
+    <section class="main-section">
     </section>
+    <main-section>
+            <div class="main_div">
+                <h1> 질문 밑 답변 (미리보기) #a=href(준비)  </h1>
+>>>>>>> c187fe9f604dfbb9304be6879a30833cc56dca58
+            </div>
+            <div class="main_div">
+                <h1> 질문 밑 답변 (미리보기) </h1>
+            </div>
+            <div class="main_div">
+                <h1> 질문 밑 답변 (미리보기) </h1>
+            </div>
+            <div class="main_div">
+                <h1> 질문 밑 답변 (미리보기) </h1>
+            </div>
+        <div> <h1>질문 등록하기</h1> </div>
+</main-section>
+
     <footer>
         <div class="country">
             <span>현재 접속 국가 : 대한민국</span>
@@ -279,7 +303,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
-
