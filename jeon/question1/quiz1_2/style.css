@@ -41,6 +41,7 @@
 .borderline{
     border:1px solid gray;
 }
+
 :root{
     --gray-color :#717271;
     --light-gray-color: #dee0e5;
@@ -108,10 +109,13 @@
     justify-content: flex-start;
     margin-right: auto;
 }
+.search-input{
+    height: 24px;
+}
 
 .top-header .top-nav #action-area .small_searchbar_wrap{
-    padding-left:-25%;
-    padding-top:5%;
+    padding-left:5%;
+    
 }
 footer{
     position: fixed;
