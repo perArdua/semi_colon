@@ -183,3 +183,47 @@ footer .foot-links-wrap .foot-links-wrap-left ul li a{
     padding-right: 28px;
     text-decoration: none;
 }
+
+.sub-section{
+    margin-top: 3%;
+}
+
+.sub-section .section-explain{
+    text-align: center;
+    font-size: 25;
+}
+
+.sub-section .category_wrap{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.sub-section .category_wrap .item{
+    border: 1px solid #999fa6;
+}
+
+.sub-section .category_wrap a:link{
+    color : pink;
+    text-decoration: none;
+}
+
+.sub-section .category_wrap a:visited{
+    color : brown;
+    text-decoration: none;
+}
+
+.sub-section .category_wrap a:hover{
+    color : goldenrod;
+    text-decoration: none;
+}
+
+.sub-section .category_wrap a:active{
+    color : greenyellow;
+    text-decoration: none;
+}
