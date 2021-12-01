@@ -208,22 +208,22 @@ footer .foot-links-wrap .foot-links-wrap-left ul li a{
     border: 1px solid #999fa6;
 }
 
-.sub-section .category_wrap a:link{
-    color : pink;
+a:link{
+    color : cornflowerblue;
     text-decoration: none;
 }
 
-.sub-section .category_wrap a:visited{
-    color : brown;
+a:visited{
+    color : cornflowerblue;
     text-decoration: none;
 }
 
-.sub-section .category_wrap a:hover{
+a:hover{
     color : goldenrod;
     text-decoration: none;
 }
 
-.sub-section .category_wrap a:active{
+a:active{
     color : greenyellow;
     text-decoration: none;
 }
