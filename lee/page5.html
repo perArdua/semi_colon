@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <HTML>
     <HEAD>
         <META NAME="GENERATOR" Content="Microsoft Visual Studio">
@@ -33,21 +34,25 @@
         <div class="ans">
             <br/>
             <div>
-                <textarea cols="40px" rows="1%" placeholder="제목을 입력하세요" style="font-size: 40px;"></textarea>
+                <textarea cols="48px" rows="1%" placeholder="제목을 입력하세요" style="font-size: 40px;"></textarea>
             </div>
+            <br/>
             <br/>
             <div>
-                <textarea cols="62px" rows="13px" placeholder="궁금한 내용을 질문해주세요&#13;&#10;&#13;&#10;질문 시 다음을 주의해 주세요!&#13;&#10;- 구체적인 질문은 빠른 답변으로 이어집니다&#13;&#10;- 답변이 등록되면 수정 및 삭제가 불가합니다&#13;&#10;- 질문 내용에 개인정보가 포함되지 않게 해주세요&#13;&#10;- 전문가들은 질문자님의 개인정보를 요구하지 않습니다&#13;&#10;- 피해를 입으셨다면 서비스에 신고 또는 수사기관에 연락해주세요" style="font-size: 25px;"></textarea>
+                <textarea cols="62px" rows="16px" placeholder="궁금한 내용을 질문해주세요&#13;&#10;&#13;&#10;질문 시 다음을 주의해 주세요!&#13;&#10;- 답변이 등록되면 수정 및 삭제가 불가합니다&#13;&#10;- 질문 내용에 개인정보가 포함되지 않게 해주세요&#13;&#10;- 전문가들은 질문자님의 개인정보를 요구하지 않습니다&#13;&#10;- 피해를 입으셨다면 서비스에 신고 또는 수사기관에 연락해주세요" style="font-size: 25px; vertical-align:top;"></textarea>
+                &nbsp;<div class="balloon left" ><span>구체적인 질문은<br/>빠른 답변으로 이어집니다!<br/><br/>질문예시<br/>1. 선형대수학에서 <br/>&nbsp;&nbsp;&nbsp;&nbsp;span이 뭔가요?<br/>2. C에서 포인터의 개념이<br/>&nbsp;&nbsp;&nbsp;&nbsp;뭔지 모르겠습니다</span></div>
             </div>
             <br/>
+            <br/>
                 <div>
-                    <textarea cols="80" rows="1" placeholder="#원하는 #태그를 #입력하세요" style="font-size: 20px;"></textarea>
+                    <textarea cols="80" rows="1" placeholder="#질문에 #해당하는 #태그를 #입력하세요" style="font-size: 24px;"></textarea>
                 </div>
                 <br/>
+                <br/>
                 <div class="button">
-                    <input type="button" value="질문입력" onclick="location.href='../cho/page2.html'" button/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="button" value="질문취소" onclick="location.href='../cho/page2.html'" button/>
+                    <input type="button" value="질문입력" onclick=" q_submit(); location.href='../cho/page2.html'" style=" font-size: 20px; WIDTH: 65pt; HEIGHT: 30pt"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="질문취소" onclick=" q_cancel(); location.href='../cho/page2.html'" style=" font-size: 20px; WIDTH: 65pt; HEIGHT: 30pt"/>
                 </div>
         </div>
         <footer>
@@ -73,6 +78,14 @@
     
     
     </BODY>
+    <script>
+        function q_submit(){
+            alert('질문이 등록되었습니다!');
+        }
+        function q_cancel(){
+            alert('질문이 취소되었습니다!');
+        }
+    </script>
     <style>
     
         div.container {
@@ -88,9 +101,7 @@
             align-items: center;
             height: 90%;
             width: 100%;
-            background-color: F6F6F6;
             margin: auto;
-            padding-top: 2%;
             border-top: 1px solid lavender;
         }
     
@@ -111,12 +122,46 @@
             width: 100%;
             flex-direction: row;
             align-items: center;
-            padding-left: 95%;
+            padding-left: 91%;
         }
         div.proans{
             font-size: 24px;
         }
-    
+
+        .balloon {
+        position: relative;
+        display: inline-block;
+    }
+ 
+    .balloon span {
+        display: inline-block;
+        padding: 10px;
+        color: #000000;
+        background: lavender;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+ 
+    .balloon:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+ 
+    .balloon.right:after, .balloon.left:after {
+        border-width: 10px 15px;
+        top: 15%;
+        margin-top: -10px;
+    }
+ 
+ 
+    .balloon.left:after {
+        border-color: transparent lavender transparent transparent;
+        left: -25px;
+    }
+ 
     
         :root {
             --gray-color: #717271;
