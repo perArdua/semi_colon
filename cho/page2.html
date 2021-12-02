@@ -138,78 +138,49 @@
             padding-right: 28px;
             text-decoration: none;
         }
-        .list {
-            display:flex;
-            height:100vh;
-            flex-wrap:wrap;
-            flex-direction:column;
-            /* flex-flow:column wrap; */
-            box-sizing:border-box;
-        }
-        .list li {
-            width:33.33%;
-            flex-basis:50%;
-            padding:20px;
-            box-sizing:border-box;
-            color:#fff;
-        }
-        .content-section{
-            width:80%;
-            height: 100%;
-            align-content: center;
-            margin: auto
-        }
-        #first_row{
-            margin-top: 2%;
-            margin-bottom: 5%;
-        }
-        #second_row{
-            margin-top: auto;
-        }
-        #first_column {
-            float:left; width:100%; height:75%; background-color:#999fa6;
-        }
-        #second_column {
-            display: block; width:20%; height:10%; background-color:#666666; margin-left:47.5%;
-        }
-        .content-section .box_wrap{
+        .main-content .container{
             display: flex;
+            flex-direction: column;
             align-items: center;
+            margin: auto;
         }
-        .content-section .box_wrap #inner{
-            margin: auto 0;
-        }
-        .flex-container.stretch{
-            align-content: left;
-        }
-
-        .flex-item{
-            width: 1000px;
-            height: 5%;
-            margin: 1%;
-            color: white;
-            font-size: 22px;
-            text-align: left;
-            position: relative;
-            left: 0%;
-            top: 50%;
-        }
-        .question-item{
-            width: 400px;
-            height: 20%;
-            margin: 1%;
-            color: white;
-            font-size: 22px;
+        .main-content .title-area .title{
+            margin-top: 2%;
+            margin-bottom: 2%;
             text-align: center;
-            position: relative;
-            left: 35%;
-            top: 50%;
         }
-        .font-item{
-            font-size: 18px;
-            height: 18%
+        .main-content .container .item{
+            width:50%;
+            height:100%;
+            margin-top: auto;
+            margin-bottom: 5%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #999fa6;
         }
-
+        .main-content .container .item a:link{
+            color : red;
+            text-decoration: none;
+    
+        }
+        .main-content .container .item a:visited{
+            color : brown;
+            text-decoration: none;
+    
+        }
+        .main-content .container .item a:hover{
+            color : goldenrod;
+            text-decoration: none;
+    
+        }
+        .main-content .container .item a:active{
+            color : greenyellow;
+            text-decoration: none;
+    
+        }
+        .main-content .not-found .text-guide{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -234,36 +205,50 @@
                 <li>수뭉이님 환영합니다</li>
             </ul>
         </nav>
-
         <hr width="100%" color="black" size="1">
     </header>
 
-    <section class="content-section">    
-        <div id="first_row"> 
-            <div id="first_column" style="margin-left: auto;">
-                <div class="flex-container stretch">
-                    <div class="flex-item color-lightseagreen"><a href="../jeon/question1/answer1/page3_answer1.html">수열 중에 피보나치 수열에 대한 정의가 궁금합니다.</a></div>
-                    <p class="font-item">
-                        피보나치 수열이란 처음 두 항을 1과 1로 한 후, 그 다음 항부터는
-                        바로 앞의 두개의 항을 더해 만드는 수열을 말합니다.
-                    </p>
-                    <div class="flex-item color-lightseagreen"><a href="../jeon/question2/answer2/page3_answer2.html">조건부확률에 대해 알려주세요.</a></div>
-                    <p class="font-item">
-                        표본공간 S의 두 사건 A,B에 대하여 확률이 0이 아닌 사건 A가 일어났다고 가정할 때
-                        사건 B가 일어날 확률을 건 A가 일어났을 때의 사건 B의 조건부확률이라 하고,></p>
-                    <div class="flex-item color-lightseagreen"><a href="../jeon/question3/page3_answer3.html">이 문제 좀 풀어주세요 ㅠ</a></div>
-                    <p class="font-item"> 
-                        학생 A가 1이 적혀 있는 카드를 선택하는 사건을 A,
-                        학생 B가 1이 적혀 있는 카드를 선택하는 사건을 B라 하면
-                        P(A) = 3/6 = 1/2, P(B|A) = 2/5가 됩니다.
-                    </p>
-                    <div class="question-item color-lightseagreen"><a href="../lee/page5.html">질문 등록하기</a></div>
-                </div>
+    <div class="main-content">
+        <div class="title-area">
+            <div class="title"><h2 style="text-align: center;">답변을 기다리는 질문</h2></div>
+        </div>
+        <div class="container">
+            <div class="item">
+                <img src ="../lee/Q.png" border ="0" width="50" height = "30" style="position:fixed;top:14.8%;left:23%;">
+                <div><a href="../jeon/question1/answer1/page3_answer1.html"><h2>수열 중에 피보나치 수열에 대한 정의가 궁금합니다.</h2></a></div>
+                <hr width="100%" color="black" size="1">
+                <img src ="../lee/professor.png" border ="0" width="25" height = "25" style="position:fixed;top:17.7%;left:23.6%;">
+                <div><h4>피보나치 수열이란 처음 두 항을 1과 1로 한 후, 그 다음 항부터는
+                    바로 앞의 두개의 항을 더해 만드는 수열을 말합니다.</h4></div>
+            </div>
+            <div class="item">
+                <img src ="../lee/Q.png" border ="0" width="50" height = "30" style="position:fixed;top:29%;left:23%;">
+                <div><a href="../jeon/question2/answer2/page3_answer2.html"><h2>조건부확률에 대해 알려주세요.</h2></a></div>
+                <hr width="100%" color="black" size="1">
+                <img src ="../lee/professor.png" border ="0" width="25" height = "25" style="position:fixed;top:32.7%;left:23.6%;">
+                <div><h4>표본공간 S의 두 사건 A,B에 대하여 확률이 0이 아닌 사건 A가 일어났다고 가정할 때
+                    사건 B가 일어날 확률을 건 A가 일어났을 때의 사건 B의 조건부확률이라 하고 ...</h4></div>
+            </div>
+            <div class="item">
+                <img src ="../lee/Q.png" border ="0" width="50" height = "30" style="position:fixed;top:45.2%;left:23%;">
+                <div><a href="../jeon/question3/page3_answer3.html"><h2>이 문제 좀 풀어주세요 ㅠ</h2></a></div>
+                <hr width="100%" color="black" size="1">
+                <img src ="../lee/professor.png" border ="0" width="25" height = "25" style="position:fixed;top:49%;left:23.6%;">
+                <div><h4>학생 A가 1이 적혀 있는 카드를 선택하는 사건을 A,
+                    학생 B가 1이 적혀 있는 카드를 선택하는 사건을 B라 하면
+                    P(A) = 3/6 = 1/2, P(B|A) = 2/5가 됩니다...</h4></div>
+            </div>
+            <div class="item">a</div>
+        </div>
+        <div class="not-found">
+            <div class="text-guide">
+                <h2>원하는 답변이 없으신가요?</h2>
+                <br>
+                <a href="../lee/page5.html"><h3>질문 하러 가기</h3></a>
             </div>
         </div>
+    </div>
 
-        
-    </section>
     <footer>
         <div class="country">
             <span>현재 접속 국가 : 대한민국</span>
@@ -285,4 +270,3 @@
 
 </body>
 </html>
-
