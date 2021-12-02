@@ -44,13 +44,12 @@
                 <section class="question pt-5 d-flex">
                     <img src="q.png" width="150px" height="150px">
                     <div class="text-center">
-                        <img src="tra.PNG"><br>
-                        위 그림은 크기가 5인 정수 삼각형의 한 모습이다.<br><br>
-                        맨 위층 7부터 시작해서 아래에 있는 수 중 하나를 선택하여 아래층으로 내려올 때, <br>
-                        이제까지 선택된 수의 합이 최대가 되는 경로를 구하는 프로그램을 작성하라. <br><br>
-                        아래층에 있는 수는 현재 층에서 선택된 수의 대각선 왼쪽 또는 <br>
-                        대각선 오른쪽에 있는 것 중에서만 선택할 수 있다.<br><br>
-                        삼각형의 크기는 1 이상 500 이하이다. 삼각형을 이루고 있는 각 수는 모두 정수이며, 범위는 0 이상 9999 이하이다.
+                        정수 X에 사용할 수 있는 연산은 다음과 같이 세 가지 이다.<br><br>
+
+                        1.X가 3으로 나누어 떨어지면, 3으로 나눈다.<br>
+                        2.X가 2로 나누어 떨어지면, 2로 나눈다.<br>
+                        3.1을 뺀다.<br><br>
+                        정수 N이 주어졌을 때, 위와 같은 연산 세 개를 적절히 사용해서 1을 만들려고 한다. 연산을 사용하는 횟수의 최솟값을 출력하시오. 
                     </div>
                   
                 </section>
@@ -67,51 +66,46 @@
                     <pre class="line-number">
                         <code class="language-java">
 import java.util.Scanner;
- 
 public class Main {
  
-	static int[ ][ ] arr;
-	static Integer[ ] [ ] dp;
-	static int N;
+	static Integer[ ] dp;
  
 	public static void main(String[ ] args) {
  
 		Scanner in = new Scanner(System.in);
  
-		N = in.nextInt();
+		int N = in.nextInt();
  
-		arr = new int[N][N];
-		dp = new Integer[N][N];
+		dp = new Integer[N + 1];
+		dp[0] = dp[1] = 0;
  
-        
-		// 배열 초기화
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < i + 1; j++) {
-				arr[i][j] = in.nextInt();
+		System.out.print(recur(N));
+ 
+	}
+ 
+	static int recur(int N) {
+ 
+		if (dp[N] == null) {
+			// 6으로 나눠지는 경우 
+			if (N % 6 == 0) {
+				dp[N] = Math.min(recur(N - 1), Math.min(recur(N / 3), recur(N / 2))) + 1;
+			}
+			// 3으로만 나눠지는 경우 
+			else if (N % 3 == 0) {
+				dp[N] = Math.min(recur(N / 3), recur(N - 1)) + 1;
+			}
+			// 2로만 나눠지는 경우 
+			else if (N % 2 == 0) {
+				dp[N] = Math.min(recur(N / 2), recur(N - 1)) + 1;
+			}
+			// 2와 3으로 나누어지지 않는 경우
+			else {
+				dp[N] = recur(N - 1) + 1;
 			}
 		}
-		
-		// 가장 마지막 행의 값들을 DP의 마지막 행에도 똑같이 복사
-		for (int i = 0; i < N; i++) {
-			dp[N - 1][i] = arr[N - 1][i];
-		}
- 
-		System.out.println(find(0, 0));
- 
+		return dp[N];
 	}
  
-	
-	static int find(int depth, int idx) {
-		// 마지막 행일 경우 현재 위치의 dp값 반환
-		if(depth == N - 1) return dp[depth][idx];
- 
-		// 탐색하지 않았던 값일 경우 다음 행의 양쪽 값 비교
-		if (dp[depth][idx] == null) {
-			dp[depth][idx] = Math.max(find(depth + 1, idx), find(depth + 1, idx + 1)) + arr[depth][idx];
-		}
-		return dp[depth][idx];
- 
-	}
 }
 </code>
                     </pre>
