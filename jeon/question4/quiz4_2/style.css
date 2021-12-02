@@ -5,7 +5,7 @@
 }
 
 .out{
-    height: 600px;
+    height: 630px;
     background-color: lightgray;
 }
 
@@ -27,7 +27,7 @@
 
 .answer_check{
     width: 1200px;
-    height: 1200px;
+    height: 1230px;
     margin: auto;
     font-size:15px;
     font-weight: bold;

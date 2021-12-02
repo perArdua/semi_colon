@@ -5,13 +5,9 @@
     margin : auto;
 }
 
-.logo{
-    height: 150px;
-    background-color: blue;
-}
 
 .out{
-    height: 800px;
+    height: 900px;
     background-color: lightgray;
 }
 
