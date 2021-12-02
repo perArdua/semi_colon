@@ -1,46 +1,43 @@
 .all{
     width: 1200px;
     height: 100%;
-    margin : auto;   
+    margin : auto;
 }
 
 .out{
-    height: 1200px;
+    height: 600px;
     background-color: lightgray;
 }
 
 .question{
     width: 1000px;
-    height: 300px;
+    height: 500px;
     margin: auto;
-}
-.questiontitle{
-    font-size:15px;
-    font-weight: bold;
-}
-.questionsub{
     font-size:20px;
     font-weight: bold;
 }
 
 .answer{
     width: 1000px;
-    height: 700px;
+    height: 100px;
     margin: auto;
-    font-size:15px;
+    font-size:25px;
     font-weight: bold;
 }
 
-.button{
-    width: 1000px;
-    height: 100px;
+.answer_check{
+    width: 1200px;
+    height: 1300px;
     margin: auto;
+    font-size:15px;
+    font-weight: bold;
+    background-color: lightgray;
 }
+
 
 .borderline{
     border:1px solid gray;
 }
-
 :root{
     --gray-color :#717271;
     --light-gray-color: #dee0e5;
