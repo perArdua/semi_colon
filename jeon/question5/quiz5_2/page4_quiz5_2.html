@@ -44,13 +44,11 @@
                 <section class="question pt-5 d-flex">
                     <img src="../../file/q.png" width="150px" height="150px">
                     <div class="text-center">
-                        <img src="../../file/tra.PNG"><br>
-                        위 그림은 크기가 5인 정수 삼각형의 한 모습이다.<br><br>
-                        맨 위층 7부터 시작해서 아래에 있는 수 중 하나를 선택하여 아래층으로 내려올 때, <br>
-                        이제까지 선택된 수의 합이 최대가 되는 경로를 구하는 프로그램을 작성하라. <br><br>
-                        아래층에 있는 수는 현재 층에서 선택된 수의 대각선 왼쪽 또는 <br>
-                        대각선 오른쪽에 있는 것 중에서만 선택할 수 있다.<br><br>
-                        삼각형의 크기는 1 이상 500 이하이다. 삼각형을 이루고 있는 각 수는 모두 정수이며, 범위는 0 이상 9999 이하이다.
+                        자연수 N과 M이 주어졌을 때, <br>
+                        아래 조건을 만족하는 길이가 M인 수열을 모두 구하는 프로그램을 작성하시오.<br><br>
+
+                        1. 1부터 N까지 자연수 중에서 M개를 고른 수열<br>
+                        2. 같은 수를 여러 번 골라도 된다.<br>
                     </div>
                   
                 </section>
@@ -69,54 +67,46 @@
 import java.util.Scanner;
  
 public class Main {
- 
-	static int[ ][ ] arr;
-	static Integer[ ] [ ] dp;
-	static int N;
+	
+	public static int[ ] arr;
+	public static int N, M;
+	public static StringBuilder sb = new StringBuilder();
  
 	public static void main(String[ ] args) {
  
 		Scanner in = new Scanner(System.in);
  
 		N = in.nextInt();
+		M = in.nextInt();
  
-		arr = new int[N][N];
-		dp = new Integer[N][N];
- 
+		arr = new int[M];
         
-		// 배열 초기화
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < i + 1; j++) {
-				arr[i][j] = in.nextInt();
+		dfs(0);
+		System.out.print(sb);
+ 
+	}
+ 
+	public static void dfs(int depth) {
+		// 깊이가 M이랑 같아지면 출력후 return
+		if (depth == M) {
+			for (int i = 0; i < M; i++) {
+				sb.append(arr[i] + " ");
 			}
-		}
-		
-		// 가장 마지막 행의 값들을 DP의 마지막 행에도 똑같이 복사
-		for (int i = 0; i < N; i++) {
-			dp[N - 1][i] = arr[N - 1][i];
+			sb.append('\n');
+			return;
 		}
  
-		System.out.println(find(0, 0));
- 
+		for (int i = 1; i <= N; i++) {
+			arr[depth] = i;
+			dfs(depth + 1);
+		}
 	}
  
-	
-	static int find(int depth, int idx) {
-		// 마지막 행일 경우 현재 위치의 dp값 반환
-		if(depth == N - 1) return dp[depth][idx];
- 
-		// 탐색하지 않았던 값일 경우 다음 행의 양쪽 값 비교
-		if (dp[depth][idx] == null) {
-			dp[depth][idx] = Math.max(find(depth + 1, idx), find(depth + 1, idx + 1)) + arr[depth][idx];
-		}
-		return dp[depth][idx];
- 
-	}
 }
 </code>
                     </pre>
                 </div>    
-                    <button type="button" class="btn float-right mr-4" onclick="location.href='../quiz4_2/page4_quiz4_2.html'">다음</button>
+                    <button type="button" class="btn float-right mr-4" onclick="location.href='../quiz5_3/page4_quiz5_3.html'">다음</button>
                 </section>
          
             <footer>
