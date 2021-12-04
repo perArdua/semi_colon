@@ -1,10 +1,8 @@
 .all{
     width: 1200px;
     height: 100%;
-
     margin : auto;
 }
-
 
 .out{
     height: 900px;
@@ -15,29 +13,25 @@
     width: 1000px;
     height: 300px;
     margin: auto;
-}
-.questiontitle{
-    font-size:15px;
-    font-weight: bold;
-}
-.questionsub{
     font-size:20px;
     font-weight: bold;
 }
 
 .answer{
     width: 1000px;
-    height: 400px;
-    background-color:lightgreen;
+    height: 100px;
     margin: auto;
-    font-size:20px;
+    font-size:25px;
     font-weight: bold;
 }
 
-.button{
+.answer_check{
     width: 1000px;
-    height: 100px;
+    height: 400px;
     margin: auto;
+    font-size:15px;
+    font-weight: bold;
+    background-color: lightgreen;
 }
 
 

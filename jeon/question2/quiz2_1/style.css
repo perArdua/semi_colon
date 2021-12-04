@@ -112,8 +112,7 @@
 .top-header .top-nav #action-area .small_searchbar_wrap{
     padding-left:5%;
     
-}
-footer{
+}footer{
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -165,5 +164,24 @@ footer .foot-links-wrap .foot-links-wrap-left ul{
 footer .foot-links-wrap .foot-links-wrap-left ul li a{
     display: block;
     padding-right: 28px;
+    text-decoration: none;
+}
+a:link{
+    color : cornflowerblue;
+    text-decoration: none;
+}
+
+a:visited{
+    color : cornflowerblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color : goldenrod;
+    text-decoration: none;
+}
+
+a:active{
+    color : greenyellow;
     text-decoration: none;
 }

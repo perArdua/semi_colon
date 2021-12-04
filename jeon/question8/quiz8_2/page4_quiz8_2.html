@@ -4,7 +4,7 @@
         <title>Well-Known</title>
         <meta charset="EUC-KR">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "style.css" >
+        <link rel = "stylesheet" href = "style.css" type="text/css">
 
         <!--부트스트랩-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -43,101 +43,58 @@
             <div class="out">            
                 <section class="question pt-5 d-flex">
                     <img src="../../file/q.png" width="150px" height="150px">
-                    <div class="text-center">
-                        정수 X에 사용할 수 있는 연산은 다음과 같이 세 가지 이다.<br><br>
-
-                        1.X가 3으로 나누어 떨어지면, 3으로 나눈다.<br>
-                        2.X가 2로 나누어 떨어지면, 2로 나눈다.<br>
-                        3.1을 뺀다.<br><br>
-                        정수 N이 주어졌을 때, 위와 같은 연산 세 개를 적절히 사용해서 1을 만들려고 한다. <br>
-                        연산을 사용하는 횟수의 최솟값을 출력하시오. 
+                    <div class="text-center"><br><br>
+                        ∂E는 중심이 원점이고 반지름이 1인 구일 때, ∬<sub>s</sub> (2x+2y+z<sup>2</sup>) dS을 계산하시오.
+                     
                     </div>
                   
                 </section>
                 <section class="answer ">
                     <div class="ml-4">
-                        <a href="https://ideone.com/">간단한 코딩 테스트 사이트</a>
+                        정답 :<input type="text" id="answer" class="ml-2 mt-2">
+                        <button type="button" class="btn ml-3" id="check">확인</button><br>
                     </div>
                     <button type="button" class="btn float-right mr-3" id="open">정답 확인</button>
                 </section>
+                <section class="answer_check borderline">
+                    <img src="../../file/3.jpg" height="90%" width="100%">
+                    
+                    <button type="button" class="btn float-right mr-3" onclick="location.href='../quiz8_3/page4_quiz8_3.html'">다음</button>
+                </section>
             </div>
         </div>
-        <section class="answer_check">
-                    <div style="width: 1000px; margin:auto;" class="pt-1">
-                    <pre class="line-number">
-                        <code class="language-java">
-import java.util.Scanner;
-public class Main {
- 
-	static Integer[ ] dp;
- 
-	public static void main(String[ ] args) {
- 
-		Scanner in = new Scanner(System.in);
- 
-		int N = in.nextInt();
- 
-		dp = new Integer[N + 1];
-		dp[0] = dp[1] = 0;
- 
-		System.out.print(recur(N));
- 
-	}
- 
-	static int recur(int N) {
- 
-		if (dp[N] == null) {
-			// 6으로 나눠지는 경우 
-			if (N % 6 == 0) {
-				dp[N] = Math.min(recur(N - 1), Math.min(recur(N / 3), recur(N / 2))) + 1;
-			}
-			// 3으로만 나눠지는 경우 
-			else if (N % 3 == 0) {
-				dp[N] = Math.min(recur(N / 3), recur(N - 1)) + 1;
-			}
-			// 2로만 나눠지는 경우 
-			else if (N % 2 == 0) {
-				dp[N] = Math.min(recur(N / 2), recur(N - 1)) + 1;
-			}
-			// 2와 3으로 나누어지지 않는 경우
-			else {
-				dp[N] = recur(N - 1) + 1;
-			}
-		}
-		return dp[N];
-	}
- 
-}
-</code>
-                    </pre>
-                </div>    
-                    <button type="button" class="btn float-right mr-4" onclick="location.href='../quiz4_3/page4_quiz4_3.html'">다음</button>
-                </section>
-         
-                <footer>
-                    <div class="country">
-                        <span>현재 접속 국가 : 대한민국</span>
-                    </div>
-                    <div class="foot-links-wrap">
-                        <div class="foot-links-wrap-right">
-            
-                        </div>
-                        <div class="foot-links-wrap-left">
-                            <ul>
-                                <li><a href="#">Well-Known 정보</a></li>
-                                <li><a href="#">이용 약관</a></li>
-                                <li><a href="#">개인정보처리방침</a></li>
-                                <li><a href="#">게시중단요청서비스</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </footer>
+        <footer>
+            <div class="country">
+                <span>현재 접속 국가 : 대한민국</span>
+            </div>
+            <div class="foot-links-wrap">
+                <div class="foot-links-wrap-right">
+    
+                </div>
+                <div class="foot-links-wrap-left">
+                    <ul>
+                        <li><a href="#">Well-Known 정보</a></li>
+                        <li><a href="#">이용 약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">게시중단요청서비스</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
         
             
-            <script src="../../file/prism.js"></script>
+            
             <script>
                 $(document).ready(function(){
                     $('.answer_check').hide();
+                    $('#check').on('click',function(){
+                        if($('#answer').val()=="4/3 π"){
+                            alert("정답입니다.");
+                        }
+                        else{
+                            alert("오답입니다.");
+                        }
+                    });
                     $('#open').on('click',function(){
                         $('.answer_check').show();
                     });
