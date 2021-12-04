@@ -1,3 +1,4 @@
+
 :root{
     --gray-color :#717271;
     --light-gray-color: #dee0e5;
@@ -8,7 +9,8 @@
 
     --button-text-gray-color: #5F6368;
     --font-family: 'Apple SD Gothic Neo',arial,sans-serif;
-}  
+} 
+
 *{
     padding: 0;
     margin: 0;
@@ -74,17 +76,6 @@
 .main-section .logo-wrap a{
     display: block;
     padding-top: 109px;
-}
-.main-section .searchbar-wrap{
-    border: solid 1px var(--light-gray-color);
-    width: 490px;
-    height: 50px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 .main-section .searchbar-wrap{
     border: solid 1px var(--light-gray-color);
@@ -185,7 +176,7 @@ footer .foot-links-wrap .foot-links-wrap-left ul li a{
 }
 
 .sub-section{
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 .sub-section .section-explain{
