@@ -6,6 +6,8 @@
 
 .out{
     height: 1800px;
+    margin-bottom: 7%;
+
     background-color: lightgray;
 }
 
@@ -32,7 +34,7 @@
 }
 .answer1{
     width: 1000px;
-    height: 350px;
+    height: 400px;
     background-color:lightgreen;
     margin: auto;
     font-size:20px;
