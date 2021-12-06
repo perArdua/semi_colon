@@ -5,7 +5,7 @@
 }
 
 .out{
-    height: 1450px;
+    height: 1800px;
     background-color: lightgray;
 }
 
@@ -28,6 +28,14 @@
     height: 1000px;
     margin: auto;
     font-size:15px;
+    font-weight: bold;
+}
+.answer1{
+    width: 1000px;
+    height: 350px;
+    background-color:lightgreen;
+    margin: auto;
+    font-size:20px;
     font-weight: bold;
 }
 

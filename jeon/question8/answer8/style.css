@@ -7,7 +7,7 @@
 
 
 .out{
-    height: 900px;
+    height: 1250px;
     background-color: lightgray;
 }
 
@@ -28,6 +28,14 @@
 .answer{
     width: 1000px;
     height: 400px;
+    background-color:lightgreen;
+    margin: auto;
+    font-size:20px;
+    font-weight: bold;
+}
+.answer1{
+    width: 1000px;
+    height: 350px;
     background-color:lightgreen;
     margin: auto;
     font-size:20px;

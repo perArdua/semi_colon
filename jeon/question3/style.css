@@ -7,7 +7,7 @@
 
 
 .out{
-    height: 900px;
+    height: 1300px;
     background-color: lightgray;
 }
 
@@ -33,6 +33,7 @@
     font-size:20px;
     font-weight: bold;
 }
+
 
 .button{
     width: 1000px;

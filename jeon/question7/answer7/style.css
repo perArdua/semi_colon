@@ -5,7 +5,7 @@
 }
 
 .out{
-    height: 1750px;
+    height: 2100px;
     background-color: lightgray;
 }
 
@@ -30,6 +30,15 @@
     font-size:15px;
     font-weight: bold;
 }
+.answer1{
+    width: 1000px;
+    height: 350px;
+    background-color:lightgreen;
+    margin: auto;
+    font-size:20px;
+    font-weight: bold;
+}
+
 
 .button{
     width: 1000px;

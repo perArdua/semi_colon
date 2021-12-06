@@ -105,7 +105,18 @@ public class Main {
 </code>
                     </pre>
                 </section>
+                <section class = "answer1 borderline">
+                    <h2>백트래킹: </h2>
+                    해를 찾아가는 과정에서 지금의 경로가 해가 될 것 같지 않으면 <br>
+                    그 경로를 더 이상 가지 않고 되돌아 갑니다. <br><br>
+                    즉 완전탐색 알고리즘에서 유망하지 않은 노드들을 가지치기한 것으로 탐색 시간을 줄여줍니다. <br><br>
+                    예를 들어 4자리 숫자로 구성된 자물쇠를 맞춘다고 하였을 때 <br>
+                    가능한 모든 경우의 수(완전탐색)는 10000가지입니다. <br><br>
+                    하지만 특정 자리의 올바른 숫자를 알고 있다면 <br>
+                    경우의 수가 10의 배수만큼 줄어들게 되는데 이것이 백트래킹입니다.
+                </section>
                 <div class="button col-10 pt-3">
+                    <img src="../../file/professor.png" style="width: 45px;"> <span style="font-size: 20px; font-weight: bold;">스피드웨건 전문가</span>
                     <button type="button" class="btn float-right" onclick="location.href='../quiz5_1/page4_quiz5_1.html'">다음</button>
                 </div>
             </div>
