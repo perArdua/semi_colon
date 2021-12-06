@@ -1,17 +1,15 @@
 .all{
-    width: 1200px;
-    height: 100%;
+    width: 65%;
     margin : auto;
 }
 
 .out{
-    height: 900px;
+    height: 100vh;
     background-color: lightgray;
 }
 
 .question{
-    width: 1000px;
-    height: 300px;
+    width: 80%;
     margin: auto;
 }
 .questiontitle{
@@ -24,8 +22,7 @@
 }
 
 .answer{
-    width: 1000px;
-    height: 400px;
+    width: 80%;
     background-color:lightgreen;
     margin: auto;
     font-size:20px;
@@ -33,8 +30,6 @@
 }
 
 .button{
-    width: 1000px;
-    height: 100px;
     margin: auto;
 }
 

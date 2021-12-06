@@ -1,23 +1,19 @@
 .all{
-    width: 1200px;
-    height: 100%;
-
-    margin : auto;
+    width: 65%;
+    margin : auto;   
 }
 
-
 .out{
-    height: 1250px;
+    height: 150vh;
     background-color: lightgray;
 }
 
 .question{
-    width: 1000px;
-    height: 300px;
+    width: 80%;
     margin: auto;
 }
 .questiontitle{
-    font-size:20px;
+    font-size:15px;
     font-weight: bold;
 }
 .questionsub{
@@ -26,16 +22,13 @@
 }
 
 .answer{
-    width: 1000px;
-    height: 400px;
-    background-color:lightgreen;
+    width: 80%;
     margin: auto;
-    font-size:20px;
+    font-size:15px;
     font-weight: bold;
 }
 .answer1{
-    width: 1000px;
-    height: 350px;
+    width: 80%;
     background-color:lightgreen;
     margin: auto;
     font-size:20px;
@@ -43,10 +36,10 @@
 }
 
 .button{
-    width: 1000px;
-    height: 100px;
+
     margin: auto;
 }
+
 
 
 .borderline{
